@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li { list-style-type: none; }
+
+i { color: rgb(117, 117, 117); }
+
+footer { height: 80px; }
+
+h6 { font-family: "Roboto"; }
+
+input::placeholder { color: #a8a8a8; }
+
+.bold { font-weight: bold; }
+
+.mg { padding: 0 60px; }
+
+.flex { display: flex; }
+
+.col { flex-direction: column; }
+
+.space { justify-content: space-between; }
+
+.inch { height: 60px; }
+
+.login-bag { width: 200px; }
+
+.width { width: 100%; }
+
+.high { height: 100%; }
+
+.cent { justify-content: center; }
+
+.align { align-items: center; }
+
+.px-12 { font-size: 12px; }
+
+.px-14 { font-size: 14px; }
+
+.px-16 { font-size: 16px; }
+
+.area { padding-left: 60px; }
+
+.foot { width: 280px; }
+
+.down { height: 450px; }
+
+.all { height: 156px; }
+
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.border-right { border-right: 1px solid #e5e5e5; }
+
+.bot { margin-bottom: 38px; }
+
+.banners { margin-bottom: 50px; }
+
+.right { background: #f7f7f7; }
+
+.mark { height: 225px; }
+
+.social img { margin-right: 25px; }
+
+.tag h4 { line-height: 1.714; }
+
+.tag p { line-height: 3.643; }
+
+.logo-tm {
+  font-size: 30px;
+  line-height: 2.167;
+}
+
+.nav {
+  font-size: 13px;
+  line-height: 5;
+}
+
+.text {
+  font-family: "Roboto";
+  line-height: 5.417;
+}
+
+.form_input {
+  padding: 0 20px 0 0;
+  height: 30px;
+  width: 100px;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.form_ico {
+  position: relative;
+  right: 16px;
+}
+
+.bag::before {
+  content: url(../img/bag.png);
+  margin-right: 16px;
+}
+
+.block {
+  height: 385px;
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 1.214;
+}
+
+.pos {
+  position: absolute;
+  top: 60px;
+  right: 100px;
+}
+
+.sale {
+  font-family: "Times New Roman";
+  line-height: 1.625;
+}
+
+.arrivals {
+  font-size: 50px;
+  line-height: 1.3;
+}
+
+.tag {
+  font-family: "Roboto";
+  text-align: center;
+  position: relative;
+}
+
+.new {
+  padding: 8px 12px;
+  background: #f14a58;
+  color: #ffffff;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.btn {
+  width: 338px;
+  height: 73px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  font-size: 24px;
+  line-height: 2.708;
+  text-align: center;
+}
+
+.col span {
+  font-family: "Roboto";
+  line-height: 2.857;
+}
+
+.label {
+  line-height: 4.063;
+  padding-top: 35px;
+}
+
+.us::before {
+  content: url(../img/twi_ico.png);
+  margin-right: 10px; 
+}
+
+.service {
+  font-family: "Times New Roman";
+  line-height: 1.875;
+  width: 300px;
+  margin: 75px 0 45px;
+}
+
+.down section:first-child,
+.down section:last-child { width: 265px; }
+
+.down section:nth-child(2),
+.down section:nth-child(3) { width: 325px; }
+
+.share {
+  width: 30px;
+  padding: 5px;
+  height: 10px;
+  background: #f4f4f4;
+  margin-left: 10px;
+}
+
+.share::before {
+  content: '';
+  border: 5px solid transparent;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-right-color: #f4f4f4;
+  position: absolute;
+  margin: 10px 0 0 -15px;
+}
