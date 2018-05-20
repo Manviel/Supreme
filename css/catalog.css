@@ -1,0 +1,66 @@
+select {
+  color: #f14a58;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+select option {
+  color: #000000;
+  font-size: 12px;
+  line-height: 5.417;
+  font-weight: bold;
+}
+
+.filter { height: 65px; }
+
+.select {
+  position: relative;
+  margin-right: 10px;
+}
+
+.select-text {
+  display: block;
+  width: 195px;
+  padding: 10px 10px 0 0;
+  border: none;
+  outline: none;
+}
+
+.select-label {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.select-text:focus ~ .select-label,
+.select-text:valid ~ .select-label {
+  font-family: "Roboto";
+  font-size: 12px;
+  top: -10px;
+	transition: 0.2s ease all;
+}
+
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 3px;
+  background: #e5e5e5;
+  outline: none;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 3px;
+  height: 9px;
+  background: #f14a58;
+}
+
+.range::-moz-range-thumb {
+  width: 3px;
+  height: 9px;
+  background: #f14a58;
+}
