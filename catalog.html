@@ -8,6 +8,7 @@
   <title>Catalog</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/catalog.css">
+  <link rel="stylesheet" href="./css/start.css">
 </head>
 
 <body>
@@ -37,22 +38,22 @@
     </nav>
   </header>
 
-  <article class="mg filter flex align border-bottom">
-    <div class="select">
+  <article class="mg filter flex end border-bottom">
+    <div class="custom-select">
       <select class="select-text" required>
         <option value="" disabled selected></option>
         <option value="casual">Casual style</option>
       </select>
       <label class="select-label bold px-16">Fashion</label>
     </div>
-    <div class="select">
+    <div class="custom-select">
       <select class="select-text" required>
         <option value="" disabled selected></option>
         <option value="jeans">Jeans</option>
       </select>
       <label class="select-label bold px-16">Product type</label>
     </div>
-    <div class="select">
+    <div class="custom-select">
       <select class="select-text" required>
         <option value="" disabled selected></option>
         <option value="not">Not selected</option>
@@ -64,14 +65,14 @@
       </select>
       <label class="select-label bold px-16">Color</label>
     </div>
-    <div class="select">
+    <div class="custom-select">
       <select class="select-text" required>
         <option value="" disabled selected></option>
         <option value="anti">Antipodium</option>
       </select>
       <label class="select-label bold px-16">Brand</label>
     </div>
-    <div class="select">
+    <div class="custom-select">
       <select class="select-text" required>
         <option value="" disabled selected></option>
         <option value="uk">UK 18</option>
@@ -79,10 +80,10 @@
       <label class="select-label bold px-16">Size</label>
     </div>
     <div class="select">
-      <div class="flex space">
+      <section class="flex space">
         <label class="bold px-12">£ 12</label>
         <label id="res" class="bold px-12"></label>
-      </div>
+      </section>
       <input type="range" id="points" min="12" max="650" class="range">
     </div>
   </article>
@@ -112,49 +113,140 @@
     </section>
   </article>
 
-  <article class="all flex cent align border-bottom">
-    <button class="btn bold">Show more</button>
+  <article class="all flex cent align">
+    <section>
+      <h2 class="px-24 ban bold">Last weekend
+        <span class="red">extra 50%</span> off on all reduced boots and shoulder bags
+      </h2>
+      <i>This offer is valid in-store and online. Prices displayed reflect this additional disount. This offer ends at 11:59
+        GMT on March 1st 2015</i>
+    </section>
   </article>
 
-  <article class="mg flex down border-bottom">
-    <section>
-      <h3 class="label bold px-16">Quick Links</h3>
-      <div class="flex col">
-        <span class="px-14">Store locator</span>
-        <span class="px-14">Gift cards</span>
-        <span class="px-14">Size guide</span>
-        <span class="px-14">About us</span>
-        <span class="px-14">Support</span>
+  <article class="mg top flex space">
+    <section class="tag px-14">
+      <img src="./img/ph5.png" alt="ph5" class="bot">
+      <h4 class="bold">Levi's Jeans for women</h4>
+      <i>More colours</i>
+    </section>
+    <section class="tag px-14">
+      <img src="./img/ph6.png" alt="ph6" class="bot">
+      <h4 class="bold">Boyfriend T-Shirt with Bohemian Print</h4>
+      <i>£120.00 -25% </i>
+      <p class="inline">£90.00</p>
+    </section>
+    <section class="tag px-14">
+      <img src="./img/ph7.png" alt="ph7" class="bot">
+      <h4 class="bold">Colour Block</h4>
+      <p>£550.50</p>
+    </section>
+    <section class="tag px-14">
+      <img src="./img/ph8.png" alt="ph8" class="bot">
+      <h4 class="bold">Monki Festval Knitted</h4>
+      <p>£24.75</p>
+    </section>
+  </article>
+
+  <article class="mg top flex space">
+    <section class="tag px-14">
+      <img src="./img/ph9.png" alt="ph9" class="bot">
+      <h4 class="bold">Oversized Cardigan</h4>
+      <p>£90.00</p>
+    </section>
+    <section class="tag px-14">
+      <img src="./img/ph10.png" alt="ph10" class="bot">
+      <h4 class="bold">Paul & Joe Sister Jumper with Neon Trims</h4>
+      <p>£19.75</p>
+    </section>
+    <section class="tag px-14">
+      <img src="./img/ph11.png" alt="ph11" class="bot">
+      <h4 class="bold">Only Busted Knee Jean</h4>
+      <p>£140.50</p>
+    </section>
+    <section class="tag px-14">
+      <img src="./img/ph12.png" alt="ph12" class="bot">
+      <h4 class="bold">Boyfriend T-Shirt with Paris Print</h4>
+      <p>£85.75</p>
+    </section>
+  </article>
+
+  <article class="mark flex cent align border-bottom top">
+    <button class="btn bold px-24">Show more</button>
+  </article>
+
+  <article class="flex grow border-bottom width">
+    <section class="block border-right width">
+      <img src="./img/adidas.png" alt="Adidas" class="high">
+      <div class="flex col cent align pos">
+        <h3 class="title bold white">Addidas Blue</h3>
+        <i class="white sale px-16">For men</i>
       </div>
     </section>
-    <section class="border-right">
-      <h3 class="label bold px-16">Customer Care</h3>
-      <div class="flex col">
-        <span class="px-14">Customer service</span>
-        <span class="px-14">Track my order</span>
-        <span class="px-14">Return policy</span>
-        <span class="px-14">Shipping & delivery</span>
-        <span class="px-14">Contact us</span>
-        <span class="px-14">Careers</span>
+    <section class="flex width">
+      <div class="block border-right">
+        <img src="./img/repair.png" alt="Repair" class="high">
+        <div class="flex col cent align abs">
+          <h3 class="title bold white">Repair Patches</h3>
+          <p class="sale px-16 white">£150.50</p>
+        </div>
+      </div>
+      <div class="block">
+        <img src="./img/sale.png" alt="Sale" class="high">
+        <div class="flex col cent align abs dis">
+          <h3 class="title bold red">Sale</h3>
+          <i class="sale px-16">-70%</i>
+        </div>
       </div>
     </section>
-    <section class="area">
-      <h3 class="label bold px-16">Questions</h3>
-      <span class="us">Tweet us
-        <b>@template</b>
-      </span>
-      <div class="service px-16">
-        <i>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</i>
-      </div>
-      <div class="social">
-        <img src="./img/fb.png" alt="facebook">
-        <img src="./img/twi.png" alt="twitter">
-      </div>
-    </section>
-    <section>
-      <h3 class="label bold px-16">Order by phone</h3>
-      <span>8-800-409-47-12</span>
-    </section>
+  </article>
+
+  <article class="flex down mg border-bottom width">
+    <div class="flex grow border-right">
+      <section class="flex col grow">
+        <h3 class="label bold px-16">Quick Links</h3>
+        <div class="flex col">
+          <span class="px-14">Store locator</span>
+          <span class="px-14">Gift cards</span>
+          <span class="px-14">Size guide</span>
+          <span class="px-14">About us</span>
+          <span class="px-14">Support</span>
+        </div>
+      </section>
+      <section class="flex col grow">
+        <h3 class="label bold px-16">Customer Care</h3>
+        <div class="flex col">
+          <span class="px-14">Customer service</span>
+          <span class="px-14">Track my order</span>
+          <span class="px-14">Return policy</span>
+          <span class="px-14">Shipping & delivery</span>
+          <span class="px-14">Contact us</span>
+          <span class="px-14">Careers</span>
+        </div>
+      </section>
+    </div>
+    <div class="flex grow col">
+      <section class="flex grow">
+        <div class="flex col grow area">
+          <h3 class="label bold px-16">Questions</h3>
+          <span class="us">Tweet us
+            <b>@template</b>
+          </span>
+        </div>
+        <div class="flex col grow">
+          <h3 class="label bold px-16">Order by phone</h3>
+          <span>8-800-409-47-12</span>
+        </div>
+      </section>
+      <section class="flex col grow area">
+        <div class="service px-16">
+          <i>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</i>
+        </div>
+        <div class="social">
+          <img src="./img/fb.png" alt="facebook">
+          <img src="./img/twi.png" alt="twitter">
+        </div>
+      </section>
+    </div>
   </article>
 
   <footer class="mg flex space align">
@@ -169,6 +261,7 @@
     </section>
   </footer>
 
+  <script src="./js/select.js"></script>
   <script src="./js/range.js"></script>
 </body>
 

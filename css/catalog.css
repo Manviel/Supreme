@@ -1,42 +1,79 @@
-select {
-  color: #f14a58;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-select option {
-  color: #000000;
-  font-size: 12px;
-  line-height: 5.417;
-  font-weight: bold;
-}
+.end { align-items: flex-end; }
 
 .filter { height: 65px; }
 
-.select {
+.custom-select select { display: none; }
+
+.red { color: #f14a58; }
+
+.select-hide { display: none; }
+
+.select { padding: 12px; }
+
+.inline { display: inline-block; }
+
+.white { color: #ffffff; }
+
+.block { background-color: #324063; }
+
+.tag i { line-height: 3.643; }
+
+.custom-select {
   position: relative;
-  margin-right: 10px;
+  bottom: 10px;
+  width: 200px;
+  height: 30px;
 }
 
-.select-text {
-  display: block;
-  width: 195px;
-  padding: 10px 10px 0 0;
+.select-selected::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+
+.select-items div,
+.select-selected {
+  padding: 10px 10px 10px 18px;
   border: none;
-  outline: none;
+  cursor: pointer;
+}
+
+.select-items div {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.select-items {
+  position: absolute;
+  background: #fff;
+  top: 136%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  outline: 1px solid #e5e5e5;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: #f7f7f7;
+  color: #f14a58;
 }
 
 .select-label {
   position: absolute;
-  left: 5px;
-  top: 10px;
+  left: 18px;
   pointer-events: none;
   transition: 0.2s ease all;
 }
 
 .select-text:focus ~ .select-label,
 .select-text:valid ~ .select-label {
-  font-family: "Roboto";
   font-size: 12px;
   top: -10px;
 	transition: 0.2s ease all;
@@ -64,3 +101,16 @@ select option {
   height: 9px;
   background: #f14a58;
 }
+
+.ban {
+  line-height: 1.417;
+  margin-bottom: 20px;
+}
+
+.abs {
+  position: absolute;
+  bottom: 55px;
+  left: 60px;
+}
+
+.dis { left: 130px; }
