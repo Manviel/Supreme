@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Item</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/catalog.css">
+  <link rel="stylesheet" href="./css/start.css">
+  <link rel="stylesheet" href="css/item.css">
+</head>
+
+<body>
+  <header class="mg border-bottom">
+    <article class="inch flex space">
+      <h1 class="logo-tm">Template</h1>
+      <section class="login-bag flex space">
+        <a href="#" class="text px-12">E-mail sing up</a>
+        <a href="#" class="text bag px-12">Bag (0)</a>
+      </section>
+    </article>
+    <nav class="inch flex">
+      <ul class="nav width bold flex space">
+        <li>Women</li>
+        <li>Men</li>
+        <li>Handbags</li>
+        <li>Accessories</li>
+        <li>Sale</li>
+        <li>New Arrivals</li>
+        <li>Clearence</li>
+        <li>Store Locator</li>
+        <main>
+          <input type="text" placeholder="Style Name" class="form_input">
+          <img src="./img/ico.png" alt="ico" class="form_ico">
+        </main>
+      </ul>
+    </nav>
+  </header>
+
+  <article class="mg filter flex align border-bottom">
+    <a href="./catalog.html">
+      <h4 class="px-16 bold">< Back to catalog</h4>
+    </a>
+  </article>
+
+  <article class="mg flex grow border-bottom top room">
+    <section class="area">
+      <div class="container">
+        <img src="./img/full.png" id="expanded" alt="full" class="width">
+      </div>
+      <div class="flex grow">
+        <section class="container thumb" onclick="switcher(this);">
+          <img src="./img/thumb_0.png" alt="thumb-0">
+        </section>
+        <section class="container thumb" onclick="switcher(this);">
+          <img src="./img/thumb_1.png" alt="thumb-1">
+        </section>
+        <section class="container thumb" onclick="switcher(this);">
+          <img src="./img/thumb_2.png" alt="thumb-2">
+        </section>
+      </div>
+    </section>
+    <section class="info">
+      <div class="take">
+        <h3 class="classic bold">Dark classic fir suit</h3>
+        <i class="fine px-16">Feature fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</i>
+      </div>
+      <p class="price take">£180.60</p>
+      <form class="flex align take">
+        <span class="size px-12">Size:</span>
+        <input type="radio" class="switch-border" id="r1" name="switch" />
+        <label for="r1">
+          <span class="switch-border bold">UK 52</span>
+        </label>
+        <input type="radio" class="switch-border" id="r2" name="switch" />
+        <label for="r2">
+          <span class="switch-border bold">UK 54</span>
+        </label>
+        <input type="radio" class="switch-border" id="r3" name="switch" />
+        <label for="r3">
+          <span class="switch-border bold">UK 56</span>
+        </label>
+      </form>
+      <form class="flex align">
+        <span class="size px-12">Color:</span>
+        <input type="radio" class="switch-border" id="r4" name="switch" />
+        <label for="r4">
+          <span class="switch-border bold">Black</span>
+        </label>
+        <input type="radio" class="switch-border" id="r5" name="switch" />
+        <label for="r5">
+          <span class="switch-border bold">Blue</span>
+        </label>
+      </form>
+      <div class="top">
+        <button class="btn bold px-24">Add to bag</button>
+      </div>
+    </section>
+  </article>
+
+  <article class="flex grow border-bottom width">
+    <section class="block border-right width">
+      <img src="./img/adidas.png" alt="Adidas" class="high">
+      <div class="flex col cent align pos">
+        <h3 class="title bold white">Addidas Blue</h3>
+        <i class="white sale px-16">For men</i>
+      </div>
+    </section>
+    <section class="flex width">
+      <div class="block border-right">
+        <img src="./img/repair.png" alt="Repair" class="high">
+        <div class="flex col cent align abs">
+          <h3 class="title bold white">Repair Patches</h3>
+          <p class="sale px-16 white">£150.50</p>
+        </div>
+      </div>
+      <div class="block">
+        <img src="./img/sale.png" alt="Sale" class="high">
+        <div class="flex col cent align abs dis">
+          <h3 class="title bold red">Sale</h3>
+          <i class="sale px-16">-70%</i>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <article class="flex down mg border-bottom width">
+    <div class="flex grow border-right">
+      <section class="flex col grow">
+        <h3 class="label bold px-16">Quick Links</h3>
+        <div class="flex col">
+          <span class="px-14">Store locator</span>
+          <span class="px-14">Gift cards</span>
+          <span class="px-14">Size guide</span>
+          <span class="px-14">About us</span>
+          <span class="px-14">Support</span>
+        </div>
+      </section>
+      <section class="flex col grow">
+        <h3 class="label bold px-16">Customer Care</h3>
+        <div class="flex col">
+          <span class="px-14">Customer service</span>
+          <span class="px-14">Track my order</span>
+          <span class="px-14">Return policy</span>
+          <span class="px-14">Shipping & delivery</span>
+          <span class="px-14">Contact us</span>
+          <span class="px-14">Careers</span>
+        </div>
+      </section>
+    </div>
+    <div class="flex grow col">
+      <section class="flex grow">
+        <div class="flex col grow area">
+          <h3 class="label bold px-16">Questions</h3>
+          <span class="us">Tweet us
+            <b>@template</b>
+          </span>
+        </div>
+        <div class="flex col grow">
+          <h3 class="label bold px-16">Order by phone</h3>
+          <span>8-800-409-47-12</span>
+        </div>
+      </section>
+      <section class="flex col grow area">
+        <div class="service px-16">
+          <i>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</i>
+        </div>
+        <div class="social">
+          <img src="./img/fb.png" alt="facebook">
+          <img src="./img/twi.png" alt="twitter">
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <footer class="mg flex space align">
+    <h6>&copy; 2010-2015, The Template Group inc.</h6>
+    <h3 class="bold">Share
+      <span class="share px-12">1437</span>
+    </h3>
+    <section class="foot flex space">
+      <h6 class="bold px-12">Legal notice</h6>
+      <h6 class="bold px-12">Privacy policy</h6>
+      <h6 class="bold px-12">Site map</h6>
+    </section>
+  </footer>
+
+  <script src="./js/switcher.js"></script>
+</body>
+
+</html>
