@@ -5,7 +5,7 @@
 .high { height: 100%; }
 
 .block {
-  height: 385px;
+  max-height: 385px;
   position: relative;
 }
 

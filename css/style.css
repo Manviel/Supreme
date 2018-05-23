@@ -1,13 +1,3 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url('../fonts/OpenSans-Regular.ttf');
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url('../fonts/Roboto-Regular.ttf');
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -66,7 +56,7 @@ input::placeholder { color: #a8a8a8; }
 
 .foot { width: 280px; }
 
-.down { height: 450px; }
+.down { min-height: 450px; }
 
 .all { height: 156px; }
 
@@ -80,11 +70,15 @@ input::placeholder { color: #a8a8a8; }
 
 .top { padding-top: 60px; }
 
+.icon { display: none; }
+
 .social img { margin-right: 25px; }
 
 .tag h4 { line-height: 1.714; }
 
 .tag p { line-height: 3.643; }
+
+.logo-tm:before { content: "Template"; }
 
 .logo-tm {
   font-size: 30px;
