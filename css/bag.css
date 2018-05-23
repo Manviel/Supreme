@@ -1,0 +1,70 @@
+.tag::before { width: 39%; }
+
+.info { padding-bottom: 60px; }
+
+.field {
+  text-align: left;
+  padding-left: 26px;
+  width: 225px;
+}
+
+.tag::after {
+  content: '\A';
+  width: 39%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.502);
+  cursor: pointer;
+}
+
+.col span {
+  font-size: 12px;
+  line-height: 2;
+}
+
+.sign {
+  border: 0;
+  background-color: transparent;
+  width: 8px;
+  margin: 10px;
+}
+
+.plus {
+  background: url(../img/plus.png);
+  height: 8px;
+}
+
+.minus {
+  background: url(../img/minus.png);
+  height: 2px;
+}
+
+.remove {
+  font-size: 13px;
+  font-family: "Open Sans";
+  border: 0;
+  background-color: transparent;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.empty {
+  font-size: 13px;
+  font-family: "Roboto";
+}
+
+.total {
+  font-size: 18px;
+  font-family: "Open Sans";
+}
+
+.but {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.delivery {
+  line-height: 5.417;
+  background: #f7f7f7;
+}
