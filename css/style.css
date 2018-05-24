@@ -24,6 +24,8 @@ h6 { font-family: "Roboto"; }
 
 input::placeholder { color: #a8a8a8; }
 
+.red { color: #f14a58; }
+
 .bold { font-weight: bold; }
 
 .mg { padding: 0 60px; }

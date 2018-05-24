@@ -8,7 +8,71 @@
   src: url('../fonts/Roboto-Regular.ttf');
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  .mg { padding: 0 39px; }
+
+  .control { display: none; }
+
+  .right { background: 0; }
+
+  .right .high { width: 297px; }
+
+  .pos { right: 50px; }
+
+  .tag:nth-child(4) { display: none; }
+
+  .tag img { width: 205px; }
+
+  .tag:not(:nth-child(3)) { margin-right: 20px; }
+
+  .service { display: none; }
+
+  .grow.border-right {border-right: 0; }
+
+  .sm { flex-direction: column; }
+
+  .sm .grow { padding-left: 23px; }
+
+  .sm .grow:nth-child(2) .label { padding-top: 0; }
+
+  .down.width { width: auto; }
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .wrapper img {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: auto;
+    transform: translateX(-50%);
+  }
+
+  .form_input {
+    width: 0;
+    border-bottom: 0;
+  }
+
+  .block.width {
+    max-width: 470px;
+    width: auto;
+  }
+
+  .block .high {
+    height: auto;
+    width: 100%;
+  }
+
+  .right .pos {
+    top: auto;
+    bottom: 40px;
+    right: 120px;
+  }
+}
+
+@media screen and (max-width: 375px) {
   .mg { padding: 0 20px; }
 
   .logo-tm:before { content: "TL"; }
@@ -19,12 +83,9 @@
 
   .right { display: none; }
 
-  .tag:nth-child(3),
-  .tag:nth-child(4) { display: none; }
-
+  .tag:nth-child(3) { display: none; }
+  
   .high { width: 100%; }
-
-  .tag:first-child { margin-right: 20px; }
 
   .tag img { width: 100%; }
 
@@ -32,11 +93,7 @@
 
   .down.mg { padding: 0; }
 
-  .area { padding-left: 0; }
-
-  .service { display: none; }
-
-  .control { display: none; }
+  .sm .grow { padding-left: 0; }
 
   .two { padding: 0 20px; }
 
@@ -44,13 +101,12 @@
 
   .label { padding-top: 0; }
 
-  .wrapper {
-    position: relative;
-    height: 474px;
-    width: 100%;
-  }
+  .wrapper { height: 474px; }
+
+  .pos { top: 30px; }
 
   .sm {
+    flex-direction: row;
     padding: 0 20px 40px;
     border-bottom: 1px solid #e5e5e5;
   }
@@ -71,7 +127,6 @@
   }
 
   .grow.border-right {
-    border-right: 0;
     border-bottom: 1px solid #e5e5e5;
     padding: 0 20px;
   }
@@ -81,16 +136,8 @@
     align-items: center;
   }
 
-  .pos {
-    top: 30px;
-    right: 50px;
-  }
-
-  .wrapper img {
-    position: absolute;
-    left: 50%;
-    height: 100%;
-    width: auto;
-    transform: translateX(-50%);
+  .form_input {
+    width: 100px;
+    border-bottom: 2px solid #e5e5e5;
   }
 }
