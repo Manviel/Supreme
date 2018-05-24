@@ -1,23 +1,19 @@
 @font-face {
   font-family: "Open Sans";
-  src: url('../fonts/OpenSans-Regular.ttf');
+  src: url('../../fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url('../fonts/Roboto-Regular.ttf');
+  src: url('../../fonts/Roboto-Regular.ttf');
 }
 
 @media screen and (max-width: 768px) {
   .mg { padding: 0 39px; }
 
-  .control { display: none; }
-
   .right { background: 0; }
 
   .right .high { width: 297px; }
-
-  .pos { right: 50px; }
 
   .tag:nth-child(4) { display: none; }
 
@@ -37,32 +33,11 @@
 
   .down.width { width: auto; }
 
-  .wrapper {
-    position: relative;
-    width: 100%;
-  }
-
-  .wrapper img {
-    position: absolute;
-    left: 50%;
-    height: 100%;
-    width: auto;
-    transform: translateX(-50%);
-  }
+  .pos { right: 50px; }
 
   .form_input {
     width: 0;
     border-bottom: 0;
-  }
-
-  .block.width {
-    max-width: 470px;
-    width: auto;
-  }
-
-  .block .high {
-    height: auto;
-    width: 100%;
   }
 
   .right .pos {

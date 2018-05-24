@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+  .all section { text-align: center; }
+
+  .top { padding-top: 40px; }
+
+  .tag::after { height: 68%; }
+
+  .none { display: none; }
+
+  .mid { height: 300px; }
+
+  .pos { top: 30px; }
+
+  .abs { left: 20px; }
+
+  .rep { width: 100%; }
+
+  h4.bold {
+    height: 46px;
+    width: 205px;
+  }
+
+  .custom-select {
+    width: 100px;
+    bottom: 20px;
+  }
+  
+  .select-selected::after { display: none; }
+
+  .select-text:valid ~ .select-label { display: none; }
+
+  .select-selected { padding-top: 0; }
+}

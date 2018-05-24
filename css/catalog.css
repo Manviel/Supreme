@@ -6,8 +6,6 @@
 
 .select-hide { display: none; }
 
-.select { padding: 12px; }
-
 .inline { display: inline-block; }
 
 .white { color: #ffffff; }
@@ -15,6 +13,11 @@
 .block { background-color: #324063; }
 
 .tag i { line-height: 3.643; }
+
+.select {
+  padding: 12px;
+  width: 100px;
+}
 
 .custom-select {
   position: relative;

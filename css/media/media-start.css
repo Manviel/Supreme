@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+  .control { display: none; }
+
+  .tag::after { height: 72%; }
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .wrapper img {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: auto;
+    transform: translateX(-50%);
+  }
+
+  .block.width {
+    max-width: 470px;
+    width: auto;
+  }
+
+  .block .high {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+}

@@ -9,18 +9,23 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/catalog.css">
   <link rel="stylesheet" href="./css/start.css">
+  <link rel="stylesheet" href="./css/media/media.css">
+  <link rel="stylesheet" href="./css/media/media-catalog.css">
 </head>
 
 <body>
   <header class="mg border-bottom">
     <article class="inch flex space">
-      <h1 class="logo-tm">Template</h1>
-      <section class="login-bag flex space">
+      <h1 class="logo-tm"></h1>
+      <section class="login-bag flex space align">
         <a href="#" class="text px-12">E-mail sing up</a>
         <a href="#" class="text bag px-12">Bag (0)</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggle()">
+          <img src="./img/ico_menu.png" alt="ico" id="ico">
+        </a>
       </section>
     </article>
-    <nav class="inch flex">
+    <nav class="inch flex side" id="nav">
       <ul class="nav width bold flex space">
         <li>Women</li>
         <li>Men</li>
@@ -30,10 +35,10 @@
         <li>New Arrivals</li>
         <li>Clearence</li>
         <li>Store Locator</li>
-        <main>
+        <li>
           <input type="text" placeholder="Style Name" class="form_input">
           <img src="./img/ico.png" alt="ico" class="form_ico">
-        </main>
+        </li>
       </ul>
     </nav>
   </header>
@@ -113,7 +118,7 @@
     </section>
   </article>
 
-  <article class="all flex cent align">
+  <article class="mg all flex cent align">
     <section>
       <h2 class="px-24 ban bold">Last weekend
         <span class="red">extra 50%</span> off on all reduced boots and shoulder bags
@@ -174,7 +179,7 @@
     <button class="btn bold px-24">Show more</button>
   </article>
 
-  <article class="flex grow border-bottom width">
+  <article class="flex grow border-bottom width mid">
     <section class="block border-right width">
       <img src="./img/adidas.png" alt="Adidas" class="high">
       <div class="flex col cent align pos">
@@ -184,13 +189,13 @@
     </section>
     <section class="flex width">
       <div class="block border-right">
-        <img src="./img/repair.png" alt="Repair" class="high">
+        <img src="./img/repair.png" alt="Repair" class="high rep">
         <div class="flex col cent align abs">
           <h3 class="title bold white">Repair Patches</h3>
           <p class="sale px-16 white">£150.50</p>
         </div>
       </div>
-      <div class="block">
+      <div class="block none">
         <img src="./img/sale.png" alt="Sale" class="high">
         <div class="flex col cent align abs dis">
           <h3 class="title bold red">Sale</h3>
@@ -225,7 +230,7 @@
       </section>
     </div>
     <div class="flex grow col">
-      <section class="flex grow">
+      <section class="flex grow sm">
         <div class="flex col grow area">
           <h3 class="label bold px-16">Questions</h3>
           <span class="us">Tweet us
@@ -237,14 +242,16 @@
           <span>8-800-409-47-12</span>
         </div>
       </section>
-      <section class="flex col grow area">
+      <section class="flex col grow area two">
         <div class="service px-16">
           <i>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</i>
         </div>
-        <div class="social">
-          <img src="./img/fb.png" alt="facebook">
-          <img src="./img/twi.png" alt="twitter">
-        </div>
+        <article class="flex space align">
+          <div class="social" id="before">
+            <img src="./img/fb.png" alt="facebook">
+            <img src="./img/twi.png" alt="twitter">
+          </div>
+        </article>
       </section>
     </div>
   </article>
@@ -254,7 +261,7 @@
     <h3 class="bold">Share
       <span class="share px-12">1437</span>
     </h3>
-    <section class="foot flex space">
+    <section class="flex foot space" id="after">
       <h6 class="bold px-12">Legal notice</h6>
       <h6 class="bold px-12">Privacy policy</h6>
       <h6 class="bold px-12">Site map</h6>
@@ -263,6 +270,7 @@
 
   <script src="./js/select.js"></script>
   <script src="./js/range.js"></script>
+  <script src="./js/resize.js"></script>
 </body>
 
 </html>
