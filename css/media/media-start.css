@@ -28,4 +28,7 @@
 }
 
 @media screen and (max-width: 375px) {
+  .tag img { width: 100%; }
+
+  .wrapper { height: 474px; }
 }

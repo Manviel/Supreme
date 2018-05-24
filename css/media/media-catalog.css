@@ -13,8 +13,6 @@
 
   .abs { left: 20px; }
 
-  .rep { width: 100%; }
-
   h4.bold {
     height: 46px;
     width: 205px;
@@ -30,4 +28,31 @@
   .select-text:valid ~ .select-label { display: none; }
 
   .select-selected { padding-top: 0; }
+}
+
+@media screen and (max-width: 375px) {
+  .tag img, h4.bold { width: 158px; }
+
+  .rep { display: none; }
+
+  .mid { height: 240px; }
+
+  .title { font-size: 20px; }
+
+  .pos { right: 30px; }
+
+  .select-label { font-size: 13px; }
+
+  .select-selected { padding: 5px; }
+
+  .select { display: none; }
+
+  .custom-select { width: 100%; }
+
+  .tag::after { height: 62%; }
+
+  .all {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }

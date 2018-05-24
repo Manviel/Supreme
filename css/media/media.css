@@ -62,8 +62,6 @@
   
   .high { width: 100%; }
 
-  .tag img { width: 100%; }
-
   .down { flex-direction: column; }
 
   .down.mg { padding: 0; }
@@ -75,8 +73,6 @@
   .social img { margin-right: 10px; }
 
   .label { padding-top: 0; }
-
-  .wrapper { height: 474px; }
 
   .pos { top: 30px; }
 
