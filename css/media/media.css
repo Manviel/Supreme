@@ -8,7 +8,7 @@
   src: url('../../fonts/Roboto-Regular.ttf');
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1024px) {
   .mg { padding: 0 39px; }
 
   .right { background: 0; }
@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 767px) {
   .mg { padding: 0 20px; }
 
   .logo-tm:before { content: "TL"; }

@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 1024px) {
   .all section { text-align: center; }
 
   .top { padding-top: 40px; }
@@ -30,7 +30,7 @@
   .select-selected { padding-top: 0; }
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 767px) {
   .tag img, h4.bold { width: 158px; }
 
   .rep { display: none; }

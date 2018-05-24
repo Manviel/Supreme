@@ -10,18 +10,24 @@
   <link rel="stylesheet" href="./css/catalog.css">
   <link rel="stylesheet" href="./css/start.css">
   <link rel="stylesheet" href="css/item.css">
+  <link rel="stylesheet" href="./css/media/media.css">
+  <link rel="stylesheet" href="./css/media/media-catalog.css">
+  <link rel="stylesheet" href="./css/media/media-item.css">
 </head>
 
 <body>
   <header class="mg border-bottom">
     <article class="inch flex space">
-      <h1 class="logo-tm">Template</h1>
-      <section class="login-bag flex space">
+      <h1 class="logo-tm"></h1>
+      <section class="login-bag flex space align">
         <a href="#" class="text px-12">E-mail sing up</a>
         <a href="#" class="text bag px-12">Bag (0)</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggle()">
+          <img src="./img/ico_menu.png" alt="ico" id="ico">
+        </a>
       </section>
     </article>
-    <nav class="inch flex">
+    <nav class="inch flex side" id="nav">
       <ul class="nav width bold flex space">
         <li>Women</li>
         <li>Men</li>
@@ -31,26 +37,27 @@
         <li>New Arrivals</li>
         <li>Clearence</li>
         <li>Store Locator</li>
-        <main>
+        <li>
           <input type="text" placeholder="Style Name" class="form_input">
           <img src="./img/ico.png" alt="ico" class="form_ico">
-        </main>
+        </li>
       </ul>
     </nav>
   </header>
 
   <article class="mg filter flex align border-bottom">
     <a href="./catalog.html">
-      <h4 class="px-16 bold">< Back to catalog</h4>
+      <h4 class="px-16 bold">
+        < Back to catalog</h4>
     </a>
   </article>
 
   <article class="mg flex grow border-bottom top room">
-    <section class="area">
-      <div class="container">
-        <img src="./img/full.png" id="expanded" alt="full" class="width">
+    <section class="area take">
+      <div class="flex container">
+        <img src="./img/full.png" id="expanded" alt="full" class="width high">
       </div>
-      <div class="flex grow">
+      <div class="flex grow item">
         <section class="container thumb" onclick="switcher(this);">
           <img src="./img/thumb_0.png" alt="thumb-0">
         </section>
@@ -63,10 +70,8 @@
       </div>
     </section>
     <section class="info">
-      <div class="take">
-        <h3 class="classic bold">Dark classic fir suit</h3>
-        <i class="fine px-16">Feature fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</i>
-      </div>
+      <h3 class="classic bold take">Dark classic fir suit</h3>
+      <i class="fine px-16 take">Feature fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</i>
       <p class="price take">£180.60</p>
       <form class="flex align take">
         <span class="size px-12">Size:</span>
@@ -100,31 +105,31 @@
     </section>
   </article>
 
-  <article class="flex grow border-bottom width">
-    <section class="block border-right width">
-      <img src="./img/adidas.png" alt="Adidas" class="high">
-      <div class="flex col cent align pos">
-        <h3 class="title bold white">Addidas Blue</h3>
-        <i class="white sale px-16">For men</i>
-      </div>
-    </section>
-    <section class="flex width">
-      <div class="block border-right">
-        <img src="./img/repair.png" alt="Repair" class="high">
-        <div class="flex col cent align abs">
-          <h3 class="title bold white">Repair Patches</h3>
-          <p class="sale px-16 white">£150.50</p>
+  <article class="flex grow border-bottom width mid">
+      <section class="block border-right width">
+        <img src="./img/adidas.png" alt="Adidas" class="high">
+        <div class="flex col cent align pos">
+          <h3 class="title bold white">Addidas Blue</h3>
+          <i class="white sale px-16">For men</i>
         </div>
-      </div>
-      <div class="block">
-        <img src="./img/sale.png" alt="Sale" class="high">
-        <div class="flex col cent align abs dis">
-          <h3 class="title bold red">Sale</h3>
-          <i class="sale px-16">-70%</i>
+      </section>
+      <section class="flex width rep">
+        <div class="block border-right">
+          <img src="./img/repair.png" alt="Repair" class="high width">
+          <div class="flex col cent align abs">
+            <h3 class="title bold white">Repair Patches</h3>
+            <p class="sale px-16 white">£150.50</p>
+          </div>
         </div>
-      </div>
-    </section>
-  </article>
+        <div class="block none">
+          <img src="./img/sale.png" alt="Sale" class="high">
+          <div class="flex col cent align abs dis">
+            <h3 class="title bold red">Sale</h3>
+            <i class="sale px-16">-70%</i>
+          </div>
+        </div>
+      </section>
+    </article>
 
   <article class="flex down mg border-bottom width">
     <div class="flex grow border-right">
@@ -151,7 +156,7 @@
       </section>
     </div>
     <div class="flex grow col">
-      <section class="flex grow">
+      <section class="flex grow sm">
         <div class="flex col grow area">
           <h3 class="label bold px-16">Questions</h3>
           <span class="us">Tweet us
@@ -163,14 +168,16 @@
           <span>8-800-409-47-12</span>
         </div>
       </section>
-      <section class="flex col grow area">
+      <section class="flex col grow area two">
         <div class="service px-16">
           <i>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</i>
         </div>
-        <div class="social">
-          <img src="./img/fb.png" alt="facebook">
-          <img src="./img/twi.png" alt="twitter">
-        </div>
+        <article class="flex space align">
+          <div class="social" id="before">
+            <img src="./img/fb.png" alt="facebook">
+            <img src="./img/twi.png" alt="twitter">
+          </div>
+        </article>
       </section>
     </div>
   </article>
@@ -180,7 +187,7 @@
     <h3 class="bold">Share
       <span class="share px-12">1437</span>
     </h3>
-    <section class="foot flex space">
+    <section class="flex foot space" id="after">
       <h6 class="bold px-12">Legal notice</h6>
       <h6 class="bold px-12">Privacy policy</h6>
       <h6 class="bold px-12">Site map</h6>
@@ -188,6 +195,8 @@
   </footer>
 
   <script src="./js/switcher.js"></script>
+  <script src="./js/toggle.js"></script>
+  <script src="./js/resize.js"></script>
 </body>
 
 </html>

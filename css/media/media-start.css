@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 1024px) {
   .control { display: none; }
 
   .tag::after { height: 72%; }
@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 767px) {
   .tag img { width: 100%; }
 
   .wrapper { height: 474px; }
