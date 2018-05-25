@@ -5,22 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Item</title>
+  <title>Shopping Bag</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/catalog.css">
   <link rel="stylesheet" href="./css/bag.css">
+  <link rel="stylesheet" href="./css/media/media.css">
+  <link rel="stylesheet" href="./css/media/media-bag.css">
 </head>
 
 <body>
   <header class="mg border-bottom">
     <article class="inch flex space">
-      <h1 class="logo-tm">Template</h1>
-      <section class="login-bag flex space">
+      <h1 class="logo-tm"></h1>
+      <section class="login-bag flex space align">
         <a href="#" class="text px-12">E-mail sing up</a>
         <a href="#" class="text bag px-12">Bag (0)</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggle()">
+          <img src="./img/ico_menu.png" alt="ico" id="ico">
+        </a>
       </section>
     </article>
-    <nav class="inch flex">
+    <nav class="inch flex side" id="nav">
       <ul class="nav width bold flex space">
         <li>Women</li>
         <li>Men</li>
@@ -30,10 +35,10 @@
         <li>New Arrivals</li>
         <li>Clearence</li>
         <li>Store Locator</li>
-        <main>
+        <li>
           <input type="text" placeholder="Style Name" class="form_input">
           <img src="./img/ico.png" alt="ico" class="form_ico">
-        </main>
+        </li>
       </ul>
     </nav>
   </header>
@@ -145,7 +150,7 @@
       </section>
     </div>
     <div class="flex grow col">
-      <section class="flex grow">
+      <section class="flex grow sm">
         <div class="flex col grow area">
           <h3 class="label bold px-16">Questions</h3>
           <span class="us">Tweet us
@@ -157,14 +162,16 @@
           <span>8-800-409-47-12</span>
         </div>
       </section>
-      <section class="flex col grow area">
+      <section class="flex col grow area two">
         <div class="service px-16">
           <i>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</i>
         </div>
-        <div class="social">
-          <img src="./img/fb.png" alt="facebook">
-          <img src="./img/twi.png" alt="twitter">
-        </div>
+        <article class="flex space align">
+          <div class="social" id="before">
+            <img src="./img/fb.png" alt="facebook">
+            <img src="./img/twi.png" alt="twitter">
+          </div>
+        </article>
       </section>
     </div>
   </article>
@@ -174,7 +181,7 @@
     <h3 class="bold">Share
       <span class="share px-12">1437</span>
     </h3>
-    <section class="foot flex space">
+    <section class="flex foot space" id="after">
       <h6 class="bold px-12">Legal notice</h6>
       <h6 class="bold px-12">Privacy policy</h6>
       <h6 class="bold px-12">Site map</h6>
@@ -182,6 +189,8 @@
   </footer>
 
   <script src="./js/switcher.js"></script>
+  <script src="./js/toggle.js"></script>
+  <script src="./js/resize.js"></script>
 </body>
 
 </html>

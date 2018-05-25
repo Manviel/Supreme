@@ -72,9 +72,12 @@
 
   .social img { margin-right: 10px; }
 
-  .label { padding-top: 0; }
-
   .pos { top: 30px; }
+
+  .label {
+    padding-top: 0;
+    width: 168px;
+  }
 
   .sm {
     flex-direction: row;

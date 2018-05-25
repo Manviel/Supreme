@@ -1,0 +1,44 @@
+@media (max-width: 1024px) {
+  .field { width: 175px; }
+
+  .bot { margin-bottom: 0; }
+
+  .top { padding-top: 30px; }
+
+  .remove { margin-top: 0; }
+
+  .info { padding-bottom: 100px; }
+
+  .btn { margin: 30px 0 60px; }
+
+  .tag img {
+    height: 100%;
+    width: 145px;
+  }
+}
+
+@media (max-width: 767px) {
+  .top.flex { flex-direction: column; }
+
+  .bot { margin-bottom: 40px; }
+
+  .info { padding-bottom: 15px; }
+
+  .tag::before { top: 80px; }
+
+  .btn {
+    width: 140px;
+    margin: 20px 0;
+  }
+
+  .delivery {
+    line-height: 1.6;
+    padding-top: 14px;
+    padding-bottom: 15px;
+  }
+
+  .tag::after {
+    width: 45%;
+    height: 84%;
+  }
+}
