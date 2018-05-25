@@ -15,12 +15,12 @@ function switchTab() {
   let i = sale.nextElementSibling.children[1];
 
   if (tablet == 768) {
-    sale.src = "./img/sale.png";
+    sale.children[0].src = "./img/sale.png";
     h3.innerText = "Sale";
     h3.classList.add("red");
     i.innerText = "-70%";
   } else {
-    sale.src = "./img/right.png";
+    sale.children[0].src = "./img/right.png";
     h3.innerText = "Caps & Hats";
     i.innerText = "Sale -50%";
   }
