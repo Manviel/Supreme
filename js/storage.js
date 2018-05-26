@@ -1,19 +1,48 @@
-let count, total;
+let total, amount;
+
+let bag = document.getElementById("bag");
+let fields = document.getElementsByClassName("field");
 
 function getStorage() {
-  let bag = document.getElementById("bag");
   total = 0;
-  count = 0;
+  amount = 0;
 
-  Object.keys(localStorage).forEach(function () {
+  if (localStorage.length > 0) {
+    setId();
+
     total = localStorage.getItem("total");
-    count = localStorage.getItem("count");
-  });
 
-  bag.innerText = `Bag ${total} (${count})`;
+    for (let i = 0; i < localStorage.length - 1; i++) {
+      for (let j = 0; j < fields.length; j++) {
+        let key = localStorage.key(i);
+        let value = localStorage.getItem(key);
+        let count = fields[j].children[4].childNodes[2];
+
+        if (fields[j].getAttribute("id") === key) {
+          amount += parseInt(value);
+
+          count.data = value;
+        }
+      }
+    }
+  }
+
+  bag.innerText = `Bag ${total} (${amount})`;
 }
 
 window.onload = () => getStorage();
+
+function setId() {
+  for (let i = 0; i < window.catalog.length; i++) {
+    for (let j = 0; j < fields.length; j++) {
+      let title = fields[j].querySelector("h4");
+
+      if (title.innerText === window.catalog[i].title) {
+        fields[j].setAttribute("id", window.catalog[i].id);
+      }
+    }
+  }
+}
 
 class Delegate {
   constructor(elem) {
@@ -29,21 +58,29 @@ class Delegate {
   minusItem(elem) {
     let parent = elem.parentNode.parentNode;
     let price = parent.children[1].innerText;
+    let count = parent.children[4].childNodes[2];
+    let title = parent.querySelector("h4");
 
     let x = parseFloat(price.match(/\d+[.][0-9]+/));
 
-    total = parseFloat(total);
+    for (let i = 0; i < window.catalog.length; i++) {
+      if (title.innerText === window.catalog[i].title) {
+        let id = window.catalog[i].id;
 
-    if (count == 0) {
-      count = 0;
-      total = 0;
-    } else {
-      count--;
-      total -= x
+        total = parseFloat(total);
+
+        if (count.data == 0) {
+          count.data = 0;
+          total = 0;
+        } else {
+          count.data--;
+          total -= x
+        }
+
+        localStorage.setItem("total", total);
+        localStorage.setItem(id, count.data);
+      }
     }
-
-    localStorage.setItem("total", total);
-    localStorage.setItem("count", count);
 
     getStorage();
   }
@@ -51,13 +88,21 @@ class Delegate {
   plusItem(elem) {
     let parent = elem.parentNode.parentNode;
     let price = parent.children[1].innerText;
+    let count = parent.children[4].childNodes[2];
+    let title = parent.querySelector("h4");
 
     let x = parseFloat(price.match(/\d+[.][0-9]+/));
 
-    total = parseFloat(total);
+    for (let i = 0; i < window.catalog.length; i++) {
+      if (title.innerText === window.catalog[i].title) {
+        let id = window.catalog[i].id;
 
-    localStorage.setItem("total", total += x);
-    localStorage.setItem("count", ++count);
+        total = parseFloat(total);
+
+        localStorage.setItem("total", total += x);
+        localStorage.setItem(id, ++count.data);
+      }
+    }
 
     getStorage();
   }
