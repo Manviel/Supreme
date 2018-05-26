@@ -19,7 +19,7 @@
       <h1 class="logo-tm"></h1>
       <section class="login-bag flex space align">
         <a href="#" class="text px-12">E-mail sing up</a>
-        <a href="#" class="text bag px-12">Bag (0)</a>
+        <a href="#" class="text bag px-12" id="bag">Bag (0)</a>
         <a href="javascript:void(0);" class="icon" onclick="toggle()">
           <img src="./img/ico_menu.png" alt="ico" id="ico">
         </a>
@@ -57,8 +57,8 @@
         <span>Color: Phillipa wash</span>
         <span>Size: UK 17</span>
         <span class="flex align">Quantity:
-          <button class="sign minus"></button>1
-          <button class="sign plus"></button>
+          <button class="sign minus" data-action="minusItem"></button>0
+          <button class="sign plus" data-action="plusItem"></button>
         </span>
         <button class="remove bold red">Remove item</button>
       </div>
@@ -71,7 +71,7 @@
         <span>Color: Blue</span>
         <span>Size: UK 18</span>
         <span class="flex align">Quantity:
-          <button class="sign minus"></button>1
+          <button class="sign minus"></button>0
           <button class="sign plus"></button>
         </span>
         <button class="remove bold red">Remove item</button>
@@ -88,7 +88,7 @@
         <span>Color: Black</span>
         <span>Size: UK 18</span>
         <span class="flex align">Quantity:
-          <button class="sign minus"></button>1
+          <button class="sign minus"></button>0
           <button class="sign plus"></button>
         </span>
         <button class="remove bold red">Remove item</button>
@@ -103,7 +103,7 @@
         <span>Color: Green</span>
         <span>Size: UK 19</span>
         <span class="flex align">Quantity:
-          <button class="sign minus"></button>1
+          <button class="sign minus"></button>0
           <button class="sign plus"></button>
         </span>
         <button class="remove bold red">Remove item</button>
@@ -117,7 +117,7 @@
   </article>
 
   <article class="mg flex align space border-bottom but">
-    <p class="empty bold">Empty bag</p>
+    <p class="empty bold" data-action="clearStorage">Empty bag</p>
     <button class="btn bold px-24">Buy now</button>
     <section>
       <span class="px-12">Total Cost</span>
@@ -191,6 +191,8 @@
   <script src="./js/switcher.js"></script>
   <script src="./js/toggle.js"></script>
   <script src="./js/resize.js"></script>
+  <script src="./data/catalog.js"></script>
+  <script src="./js/storage.js"></script>
 </body>
 
 </html>

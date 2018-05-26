@@ -1,10 +1,10 @@
-let tablet = screen.width;
+let tablet = window.innerWidth;
 
 window.onload = function () {
   switchTab();
 
   window.resize = function () {
-    tablet = screen.width;
+    tablet = window.innerWidth;
     switchTab();
   };
 };
