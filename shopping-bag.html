@@ -47,7 +47,7 @@
     <h4 class="px-16 bold">Shopping bag</h4>
   </article>
 
-  <article class="mg top flex grow">
+  <article class="mg top flex info">
     <section class="flex tag px-14 grow">
       <img src="./img/ph1.png" alt="ph1" class="bot">
       <span class="new">NEW</span>
@@ -60,7 +60,7 @@
           <button class="sign minus" data-action="minusItem"></button>0
           <button class="sign plus" data-action="plusItem"></button>
         </span>
-        <button class="remove bold red">Remove item</button>
+        <button class="remove bold red" data-action="removeItem">Remove item</button>
       </div>
     </section>
     <section class="flex tag px-14 grow">
@@ -74,12 +74,10 @@
           <button class="sign minus" data-action="minusItem"></button>0
           <button class="sign plus" data-action="plusItem"></button>
         </span>
-        <button class="remove bold red">Remove item</button>
+        <button class="remove bold red" data-action="removeItem">Remove item</button>
       </div>
     </section>
-  </article>
 
-  <article class="mg top flex grow border-bottom info">
     <section class="flex tag px-14 grow">
       <img src="./img/ph6.png" alt="ph6" class="bot">
       <div class="flex col field">
@@ -91,7 +89,7 @@
           <button class="sign minus" data-action="minusItem"></button>0
           <button class="sign plus" data-action="plusItem"></button>
         </span>
-        <button class="remove bold red">Remove item</button>
+        <button class="remove bold red" data-action="removeItem">Remove item</button>
       </div>
     </section>
     <section class="flex tag px-14 grow">
@@ -106,7 +104,7 @@
           <button class="sign minus" data-action="minusItem"></button>0
           <button class="sign plus" data-action="plusItem"></button>
         </span>
-        <button class="remove bold red">Remove item</button>
+        <button class="remove bold red" data-action="removeItem">Remove item</button>
       </div>
     </section>
   </article>
@@ -117,11 +115,11 @@
   </article>
 
   <article class="mg flex align space border-bottom but">
-    <p class="empty bold" data-action="clearStorage">Empty bag</p>
-    <button class="btn bold px-24">Buy now</button>
+    <p class="empty bold" data-action="clearStorage">Clear bag</p>
+    <button class="btn bold px-24" data-action="buyNow">Buy now</button>
     <section>
       <span class="px-12">Total Cost</span>
-      <p class="total bold">£251.50</p>
+      <p class="total bold" id="cost">£251.50</p>
     </section>
   </article>
 

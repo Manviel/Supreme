@@ -21,7 +21,7 @@
       <h1 class="logo-tm"></h1>
       <section class="login-bag flex space align">
         <a href="#" class="text px-12">E-mail sing up</a>
-        <a href="#" class="text bag px-12">Bag (0)</a>
+        <a href="#" class="text bag px-12" id="bag">Bag (0)</a>
         <a href="javascript:void(0);" class="icon" onclick="toggle()">
           <img src="./img/ico_menu.png" alt="ico" id="ico">
         </a>
@@ -70,7 +70,7 @@
       </div>
     </section>
     <section class="info">
-      <h3 class="classic bold take">Dark classic fir suit</h3>
+      <h3 class="classic bold take">Dark classic fit suit</h3>
       <i class="fine px-16 take">Feature fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</i>
       <p class="price take">£180.60</p>
       <form class="flex align take">
@@ -100,7 +100,7 @@
         </label>
       </form>
       <div class="top">
-        <button class="btn bold px-24">Add to bag</button>
+        <button class="btn bold px-24" data-action="plusItem">Add to bag</button>
       </div>
     </section>
   </article>
@@ -197,6 +197,8 @@
   <script src="./js/switcher.js"></script>
   <script src="./js/toggle.js"></script>
   <script src="./js/resize.js"></script>
+  <script src="./data/catalog.js"></script>
+  <script src="./js/itemStore.js"></script>
 </body>
 
 </html>

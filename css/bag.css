@@ -1,6 +1,13 @@
 .tag::before { width: 39%; }
 
-.info { padding-bottom: 60px; }
+.tag { margin-bottom: 90px; }
+
+.bot { margin-bottom: 0; }
+
+.info {
+  padding-bottom: 25px;
+  flex-wrap: wrap;
+}
 
 .field {
   text-align: left;
@@ -11,7 +18,7 @@
 .tag::after {
   content: '\A';
   width: 39%;
-  height: 90%;
+  height: 100%;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.502);

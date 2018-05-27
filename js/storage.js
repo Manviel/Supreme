@@ -2,6 +2,7 @@ let total, amount;
 
 let bag = document.getElementById("bag");
 let fields = document.getElementsByClassName("field");
+let cost = document.getElementById("cost");
 
 function getStorage() {
   total = 0;
@@ -28,6 +29,7 @@ function getStorage() {
   }
 
   bag.innerText = `Bag ${total} (${amount})`;
+  cost.innerText = `£${total}`;
 }
 
 window.onload = () => getStorage();
@@ -52,6 +54,17 @@ class Delegate {
 
   clearStorage() {
     localStorage.clear();
+
+    document.body.children[2].innerHTML = '<h2 class="flex align cent">Your shopping bag is empty. Use Catalog to add new items</h2>';
+
+    getStorage();
+  }
+
+  buyNow() {
+    localStorage.clear();
+
+    document.body.children[2].innerHTML = '<h2 class="flex align cent">Thank you for your purchase</h2>';
+
     getStorage();
   }
 
@@ -101,6 +114,35 @@ class Delegate {
 
         localStorage.setItem("total", total += x);
         localStorage.setItem(id, ++count.data);
+      }
+    }
+
+    getStorage();
+  }
+
+  removeItem(elem) {
+    let parent = elem.parentNode;
+    let count = parent.children[4].childNodes[2];
+    let title = parent.querySelector("h4");
+
+    for (let i = 0; i < window.catalog.length; i++) {
+      if (title.innerText === window.catalog[i].title) {
+        let id = window.catalog[i].id;
+
+        total = parseFloat(total);
+
+        if (count.data == 0) {
+          count.data = 0;
+          total = 0;
+        } else {
+          count.data--;
+          total -= x
+        }
+
+        localStorage.setItem("total", total);
+        localStorage.removeItem(id);
+
+        parent.parentNode.remove();
       }
     }
 
