@@ -226,3 +226,8 @@ input::placeholder { color: #a8a8a8; }
   color: #f14a58;
   cursor: pointer;
 }
+
+li:hover {
+  color: #f14a58;
+  cursor: pointer;
+}

@@ -15,12 +15,12 @@
   height: inherit;
   width: inherit;
   position: absolute;
+  animation: fadein 2s;
 }
 
 .buttons {
   position: absolute;
   top: 50%;
-  margin-top: 100px;
   z-index: 10;
   font-size: 0;
 }
@@ -53,3 +53,12 @@
 .first { display: inline; }
 
 .active { background-color: #f14a58; }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
