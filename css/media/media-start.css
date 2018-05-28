@@ -3,6 +3,10 @@
 
   .tag::after { height: 72%; }
 
+  .tag:nth-child(4) { display: none; }
+
+  .tag:not(:nth-child(3)) { margin-right: 20px; }
+
   .wrapper {
     position: relative;
     width: 100%;
@@ -28,6 +32,8 @@
 }
 
 @media (max-width: 767px) {
+  .tag:nth-child(3) { display: none; }
+
   .tag img { width: 100%; }
 
   .wrapper { height: 474px; }

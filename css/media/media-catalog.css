@@ -1,6 +1,4 @@
 @media (max-width: 1024px) {
-  .all section { text-align: center; }
-
   .top { padding-top: 40px; }
 
   .tag::after { height: 68%; }
@@ -13,10 +11,11 @@
 
   .abs { left: 20px; }
 
-  h4.bold {
-    height: 46px;
-    width: 205px;
-  }
+  .tag { width: 220px; }
+
+  .all { padding-bottom: 60px; }
+
+  h4.bold { height: 46px; }
 
   .custom-select {
     width: 100px;
@@ -31,7 +30,9 @@
 }
 
 @media (max-width: 767px) {
-  .tag img, h4.bold { width: 158px; }
+  .tag { margin-bottom: 40px; }
+
+  .tag, .tag img { width: 158px; }
 
   .rep { display: none; }
 
@@ -50,9 +51,4 @@
   .custom-select { width: 100%; }
 
   .tag::after { height: 62%; }
-
-  .all {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }

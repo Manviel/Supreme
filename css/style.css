@@ -60,7 +60,7 @@ input::placeholder { color: #a8a8a8; }
 
 .down { min-height: 450px; }
 
-.all { height: 156px; }
+.all { min-height: 156px; }
 
 .border-bottom { border-bottom: 1px solid #e5e5e5; }
 
@@ -120,6 +120,7 @@ input::placeholder { color: #a8a8a8; }
   font-family: "Roboto";
   text-align: center;
   position: relative;
+  width: 250px;
 }
 
 .new {
@@ -193,7 +194,7 @@ input::placeholder { color: #a8a8a8; }
 
 .tag::after {
   content: '\A';
-  width: 100%;
+  width: 98%;
   height: 75%;
   top: 0;
   left: 0;

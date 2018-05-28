@@ -12,6 +12,10 @@
 
 .block { background-color: #324063; }
 
+.all { text-align: center; }
+
+.tag { margin-bottom: 80px; }
+
 .tag i { line-height: 3.643; }
 
 .select {
@@ -115,3 +119,8 @@
 }
 
 .dis { left: 130px; }
+
+.info {
+  padding-bottom: 0;
+  flex-wrap: wrap;
+}
