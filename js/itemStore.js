@@ -28,10 +28,8 @@ function getStorage() {
 window.onload = () => getStorage();
 
 function setId() {
-  for (let i = 0; i < window.catalog.length; i++) {
-    if (title.innerText === window.catalog[i].title) {
-      title.setAttribute("id", window.catalog[i].id);
-    }
+  if (title.innerText === window.mock[0].title) {
+    title.setAttribute("id", window.mock[0].id);
   }
 }
 
@@ -47,16 +45,14 @@ class Delegate {
 
     let x = parseFloat(price.match(/\d+[.][0-9]+/));
 
-    for (let i = 0; i < window.catalog.length; i++) {
-      if (title.innerText === window.catalog[i].title) {
-        let id = window.catalog[i].id;
-        let count = localStorage.getItem(id) || 0;
+    if (title.innerText === window.mock[0].title) {
+      let id = window.mock[0].id;
+      let count = localStorage.getItem(id) || 0;
 
-        total = parseFloat(total);
+      total = parseFloat(total);
 
-        localStorage.setItem("total", total += x);
-        localStorage.setItem(id, ++count);
-      }
+      localStorage.setItem("total", total += x);
+      localStorage.setItem(id, ++count);
     }
 
     getStorage();

@@ -19,13 +19,16 @@ const promo = `
 `;
 
 for (let i = 0; i < window.catalog.length; i++) {
+  let item = window.catalog[i];
+
   list.innerHTML += `
-    <section class="tag px-14">
-      <img src="${window.catalog[i].thumbnail}" alt="${window.catalog[i].id}" class="bot">
-      ${window.catalog[i].hasNew ? '<span class="new">NEW</span>' : ''}
-      <h4 class="bold">${window.catalog[i].title}</h4>
-      <p>${window.catalog[i].discountedPrice === null ? window.catalog[i].placeholder : '£' + window.catalog[i].discountedPrice}</p>
-    </section>
+    <a href="./item.html" class="tag px-14">
+      <img src="${item.thumbnail}" alt="${item.id}" class="bot">
+      ${item.hasNew ? '<span class="new">NEW</span>' : ''}
+      <h4 class="bold">${item.title}</h4>
+      ${item.discountedPrice !== item.price ? `<i>£${item.price} -${100 - ((item.discountedPrice * 100) / item.price)}%</i>` : ''}
+      <p class="inline">${item.discountedPrice === null ? item.placeholder : '£' + item.discountedPrice}</p>
+    </a>
   `;
 
   if (i === 1 && mediaSize <= 760 && mediaSize > 370) {
