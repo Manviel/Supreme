@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Catalog</title>
+  <title>Item</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/catalog.css">
   <link rel="stylesheet" href="./css/start.css">
+  <link rel="stylesheet" href="css/item.css">
   <link rel="stylesheet" href="./css/media/media.css">
   <link rel="stylesheet" href="./css/media/media-catalog.css">
+  <link rel="stylesheet" href="./css/media/media-item.css">
 </head>
 
 <body>
@@ -21,7 +23,7 @@
       </a>
       <section class="login-bag flex space align">
         <a href="#" class="text px-12">E-mail sing up</a>
-        <a href="./shopping-bag.html" class="text bag px-12">Bag (0)</a>
+        <a href="./shopping-bag.html" class="text bag px-12" id="bag">Bag (0)</a>
         <a href="javascript:void(0);" class="icon" onclick="toggle()">
           <img src="./img/ico_menu.png" alt="ico" id="ico">
         </a>
@@ -45,60 +47,14 @@
     </nav>
   </header>
 
-  <article class="mg filter flex end border-bottom">
-    <div class="custom-select">
-      <select class="select-text" required>
-        <option value="" disabled selected></option>
-        <option value="casual">Casual style</option>
-      </select>
-      <label class="select-label bold px-16">Fashion</label>
-    </div>
-    <div class="custom-select">
-      <select class="select-text" required>
-        <option value="" disabled selected></option>
-        <option value="jeans">Jeans</option>
-      </select>
-      <label class="select-label bold px-16">Product type</label>
-    </div>
-    <div class="custom-select">
-      <select class="select-text" required>
-        <option value="" disabled selected></option>
-        <option value="black">Black</option>
-        <option value="blue">Blue</option>
-        <option value="red">Red</option>
-        <option value="green">Green</option>
-        <option value="golden">Golden</option>
-      </select>
-      <label class="select-label bold px-16">Color</label>
-    </div>
-    <div class="custom-select">
-      <select class="select-text" required>
-        <option value="" disabled selected></option>
-        <option value="anti">Antipodium</option>
-      </select>
-      <label class="select-label bold px-16">Brand</label>
-    </div>
-    <div class="custom-select">
-      <select class="select-text" required>
-        <option value="" disabled selected></option>
-        <option value="uk">UK 18</option>
-      </select>
-      <label class="select-label bold px-16">Size</label>
-    </div>
-    <div class="select">
-      <section class="flex space">
-        <label class="bold px-12">£ 12</label>
-        <label id="res" class="bold px-12"></label>
-      </section>
-      <input type="range" id="points" min="12" max="650" class="range">
-    </div>
+  <article class="mg filter flex align border-bottom">
+    <a href="./catalog.html">
+      <h4 class="px-16 bold">
+        < Back to catalog</h4>
+    </a>
   </article>
 
-  <article class="mg top flex space info" id="list"></article>
-
-  <article class="mg all flex cent align border-bottom">
-    <button class="btn bold px-24">Show more</button>
-  </article>
+  <article class="mg flex grow border-bottom top room" id="list"></article>
 
   <article class="flex grow border-bottom width mid">
     <section class="block border-right width">
@@ -189,13 +145,9 @@
     </section>
   </footer>
 
-  <script src="./js/select.js"></script>
-  <script src="./js/range.js"></script>
   <script src="./js/toggle.js"></script>
   <script src="./js/resize.js"></script>
-  <script src="./data/catalog.js"></script>
-  <script src="./js/dynamic.js"></script>
-  <script src="./js/shopping.js"></script>
+  <script src="./js/fromStore.js"></script>
 </body>
 
 </html>

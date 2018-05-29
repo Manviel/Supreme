@@ -22,7 +22,7 @@ for (let i = 0; i < window.catalog.length; i++) {
   let item = window.catalog[i];
 
   list.innerHTML += `
-    <a href="./item.html" class="tag px-14">
+    <a href="./detail.html" class="tag px-14" data-action="goToDetail">
       <img src="${item.thumbnail}" alt="${item.id}" class="bot">
       ${item.hasNew ? '<span class="new">NEW</span>' : ''}
       <h4 class="bold">${item.title}</h4>
