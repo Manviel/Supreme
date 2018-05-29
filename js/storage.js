@@ -1,6 +1,7 @@
 let total, amount;
 
 let bag = document.getElementById("bag");
+let list = document.getElementById("list");
 let fields = document.getElementsByClassName("field");
 let cost = document.getElementById("cost");
 
@@ -9,22 +10,14 @@ function getStorage() {
   amount = 0;
 
   if (localStorage.length > 0) {
-    setId();
+    render();
 
     total = localStorage.getItem("total");
 
-    for (let i = 0; i < localStorage.length - 1; i++) {
-      for (let j = 0; j < fields.length; j++) {
-        let key = localStorage.key(i);
-        let value = localStorage.getItem(key);
-        let count = fields[j].children[4].childNodes[2];
+    for (let j = 0; j < fields.length; j++) {
+      let count = fields[j].children[4].childNodes[2];
 
-        if (fields[j].getAttribute("id") === key) {
-          amount += parseInt(value);
-
-          count.data = value;
-        }
-      }
+      amount += parseInt(count.data);
     }
   }
 
@@ -34,15 +27,32 @@ function getStorage() {
 
 window.onload = () => getStorage();
 
-function setId() {
-  for (let i = 0; i < window.catalog.length; i++) {
-    for (let j = 0; j < fields.length; j++) {
-      let title = fields[j].querySelector("h4");
+function render() {
+  list.innerHTML = '';
 
-      if (title.innerText === window.catalog[i].title) {
-        fields[j].setAttribute("id", window.catalog[i].id);
-      }
-    }
+  localStorage.removeItem("click");
+
+  for (let i = 0; i < localStorage.length - 1; i++) {
+    let key = localStorage.key(i);
+    let item = JSON.parse(localStorage.getItem(key));
+
+    list.innerHTML += `
+      <section class="flex tag px-14 grow">
+        <img src="${item.thumbnail}" alt="${item.id}" class="bot">
+        ${item.hasNew ? '<span class="new">NEW</span>' : ''}
+        <div class="flex col field" id="${item.id}">
+          <h4 class="bold">${item.title}</h4>
+          <p class="px-16 bold">£${item.discountedPrice}</p>
+          <span>Color: ${item.colors}</span>
+          <span>Size: ${item.sizes}</span>
+          <span class="flex align">Quantity:
+            <button class="sign minus" data-action="minusItem"></button>${item.count}
+            <button class="sign plus" data-action="plusItem"></button>
+          </span>
+          <button class="remove bold red" data-action="removeItem">Remove item</button>
+        </div>
+      </section>
+    `;
   }
 }
 
@@ -71,29 +81,22 @@ class Delegate {
   minusItem(elem) {
     let parent = elem.parentNode.parentNode;
     let price = parent.children[1].innerText;
-    let count = parent.children[4].childNodes[2];
-    let title = parent.querySelector("h4");
 
     let x = parseFloat(price.match(/\d+[.][0-9]+/));
+    let id = parent.getAttribute("id");
+    let item = JSON.parse(localStorage.getItem(id));
 
-    for (let i = 0; i < window.catalog.length; i++) {
-      if (title.innerText === window.catalog[i].title) {
-        let id = window.catalog[i].id;
+    total = parseFloat(total);
 
-        total = parseFloat(total);
-
-        if (count.data == 0) {
-          count.data = 0;
-          total = 0;
-        } else {
-          count.data--;
-          total -= x
-        }
-
-        localStorage.setItem("total", total);
-        localStorage.setItem(id, count.data);
-      }
+    if (item.count == 0) {
+      total = total;
+    } else {
+      item.count--;
+      total -= x;
     }
+
+    localStorage.setItem("total", total);
+    localStorage.setItem(id, JSON.stringify(item));
 
     getStorage();
   }
@@ -101,50 +104,38 @@ class Delegate {
   plusItem(elem) {
     let parent = elem.parentNode.parentNode;
     let price = parent.children[1].innerText;
-    let count = parent.children[4].childNodes[2];
-    let title = parent.querySelector("h4");
 
     let x = parseFloat(price.match(/\d+[.][0-9]+/));
+    let id = parent.getAttribute("id");
+    let item = JSON.parse(localStorage.getItem(id));
 
-    for (let i = 0; i < window.catalog.length; i++) {
-      if (title.innerText === window.catalog[i].title) {
-        let id = window.catalog[i].id;
+    item.count++;
 
-        total = parseFloat(total);
+    total = parseFloat(total);
 
-        localStorage.setItem("total", total += x);
-        localStorage.setItem(id, ++count.data);
-      }
-    }
+    localStorage.setItem("total", total += x);
+    localStorage.setItem(id, JSON.stringify(item));
 
     getStorage();
   }
 
   removeItem(elem) {
     let parent = elem.parentNode;
-    let count = parent.children[4].childNodes[2];
-    let title = parent.querySelector("h4");
+    let price = parent.children[1].innerText;
 
-    for (let i = 0; i < window.catalog.length; i++) {
-      if (title.innerText === window.catalog[i].title) {
-        let id = window.catalog[i].id;
+    let x = parseFloat(price.match(/\d+[.][0-9]+/));
+    let id = parent.getAttribute("id");
+    let item = JSON.parse(localStorage.getItem(id));
 
-        total = parseFloat(total);
+    total = parseFloat(total);
 
-        if (count.data == 0) {
-          count.data = 0;
-          total = 0;
-        } else {
-          count.data--;
-          total -= x
-        }
+    total -= (x * item.count);
+    item.count = 0;
 
-        localStorage.setItem("total", total);
-        localStorage.removeItem(id);
+    localStorage.setItem("total", total);
+    localStorage.removeItem(id);
 
-        parent.parentNode.remove();
-      }
-    }
+    parent.parentNode.remove();
 
     getStorage();
   }

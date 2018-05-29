@@ -1,4 +1,4 @@
-.tag::before { width: 39%; }
+.tag::before, .tag::after { width: 39%; }
 
 .tag { margin-bottom: 90px; }
 
@@ -17,7 +17,6 @@
 
 .tag::after {
   content: '\A';
-  width: 39%;
   height: 100%;
   top: 0;
   left: 0;

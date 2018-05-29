@@ -12,6 +12,7 @@ window.mock = [
     fashion: 'Classical style',
     colors: ['Black', 'Blue'],
     sizes: ['UK 52', 'UK 54', 'UK 56'],
-    thumbnail: './img/full.png'
+    thumbnail: './img/full.png',
+    count: 0
   }
 ];

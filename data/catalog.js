@@ -11,7 +11,8 @@ window.catalog = [{
   fashion: 'Casual style',
   colors: [],
   sizes: [],
-  thumbnail: './img/ph8.png'
+  thumbnail: './img/ph8.png',
+  count: 0
 }, {
   id: '07cf6ce2-6eee-4e78-a441-f257fdea7ed6',
   dateAdded: '2017-06-12T15:35:13.000Z',
@@ -23,9 +24,10 @@ window.catalog = [{
   hasNew: false,
   category: 'women',
   fashion: 'Casual style',
-  colors: [],
-  sizes: [],
-  thumbnail: './img/ph6.png'
+  colors: 'Black',
+  sizes: 'UK 18',
+  thumbnail: './img/ph6.png',
+  count: 0
 }, {
   id: '0fdfa061-838d-42ab-ae06-99c66115f633',
   dateAdded: '2017-02-12T11:14:29.000Z',
@@ -39,7 +41,8 @@ window.catalog = [{
   fashion: 'Casual style',
   colors: [],
   sizes: [],
-  thumbnail: './img/ph12.png'
+  thumbnail: './img/ph12.png',
+  count: 0
 }, {
   id: '5677f851-1c4a-4e9b-80e9-16d1e6265257',
   dateAdded: '2017-07-07T10:00:39.000Z',
@@ -53,7 +56,8 @@ window.catalog = [{
   fashion: 'Casual style',
   colors: [],
   sizes: [],
-  thumbnail: './img/ph5.png'
+  thumbnail: './img/ph5.png',
+  count: 0
 }, {
   id: '739d3ae0-6dca-4453-a7a4-a94b841a296d',
   dateAdded: '2017-07-12T09:02:55.000Z',
@@ -67,7 +71,8 @@ window.catalog = [{
   fashion: 'Casual style',
   colors: [],
   sizes: [],
-  thumbnail: './img/ph4.png'
+  thumbnail: './img/ph4.png',
+  count: 0
 }, {
   id: '8b300772-eee3-4ff1-b091-e89f17e0e469',
   dateAdded: '2017-08-10T14:59:00.000Z',
@@ -79,9 +84,10 @@ window.catalog = [{
   hasNew: true,
   category: 'women',
   fashion: 'Casual style',
-  colors: [],
-  sizes: [],
-  thumbnail: './img/ph2.png'
+  colors: 'Green',
+  sizes: 'UK 19',
+  thumbnail: './img/ph2.png',
+  count: 0
 }, {
   id: '8c061815-6a7d-4465-bb78-1bdc6c5adebf',
   dateAdded: '2017-08-28T09:15:36.000Z',
@@ -93,9 +99,10 @@ window.catalog = [{
   hasNew: true,
   category: 'women',
   fashion: 'Casual style',
-  colors: [],
-  sizes: [],
-  thumbnail: './img/ph1.png'
+  colors: 'Phillipa wash',
+  sizes: 'UK 17',
+  thumbnail: './img/ph1.png',
+  count: 0
 }, {
   id: '9ded7821-e510-4a16-ba9f-57c1e3442ad8',
   dateAdded: '2017-07-19T15:11:04.000Z',
@@ -109,7 +116,8 @@ window.catalog = [{
   fashion: 'Casual style',
   colors: [],
   sizes: [],
-  thumbnail: './img/ph3.png'
+  thumbnail: './img/ph3.png',
+  count: 0
 }, {
   id: 'bec71daa-d133-473d-bbb0-1ee0a427a17d',
   dateAdded: '2017-03-09T17:51:45.000Z',
@@ -123,7 +131,8 @@ window.catalog = [{
   fashion: 'Casual style',
   colors: [],
   sizes: [],
-  thumbnail: './img/ph11.png'
+  thumbnail: './img/ph11.png',
+  count: 0
 }, {
   id: 'ccc8a5d5-7cdf-4706-95f2-abc64761400d',
   dateAdded: '2017-06-09T17:32:17.000Z',
@@ -137,7 +146,8 @@ window.catalog = [{
   fashion: 'Casual style',
   colors: [],
   sizes: [],
-  thumbnail: './img/ph7.png'
+  thumbnail: './img/ph7.png',
+  count: 0
 }, {
   id: 'e50a3153-7833-4b85-b412-1a39d215fd38',
   dateAdded: '2017-04-25T12:14:41.000Z',
@@ -151,7 +161,8 @@ window.catalog = [{
   fashion: 'Casual style',
   colors: [],
   sizes: [],
-  thumbnail: './img/ph9.png'
+  thumbnail: './img/ph9.png',
+  count: 0
 }, {
   id: 'ff665110-5e7f-435d-b1b4-651c3d5050ca',
   dateAdded: '2017-04-05T10:04:16.000Z',
@@ -163,7 +174,8 @@ window.catalog = [{
   hasNew: false,
   category: 'women',
   fashion: 'Casual style',
-  colors: [],
-  sizes: [],
-  thumbnail: './img/ph10.png'
+  colors: 'Blue',
+  sizes: 'UK 18',
+  thumbnail: './img/ph10.png',
+  count: 0
 }];

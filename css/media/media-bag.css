@@ -31,7 +31,7 @@
 @media (max-width: 767px) {
   .tag:nth-child(3) { display: flex; }
 
-  .tag::after { width: 45%; }
+  .tag::after, .tag::before { width: 58%; }
 
   .top.flex { flex-direction: column; }
 

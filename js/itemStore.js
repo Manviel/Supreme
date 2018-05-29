@@ -1,24 +1,20 @@
 let total, amount;
 
 let bag = document.getElementById("bag");
-let title = document.querySelector("h3.classic");
+let title = document.querySelector("h3.classic").setAttribute("id", window.mock[0].id);
 
 function getStorage() {
   total = 0;
   amount = 0;
 
   if (localStorage.length > 0) {
-    setId();
-
     total = localStorage.getItem("total");
 
     for (let i = 0; i < localStorage.length - 1; i++) {
       let key = localStorage.key(i);
-      let value = localStorage.getItem(key);
+      let item = JSON.parse(localStorage.getItem(key));
 
-      if (title.getAttribute("id") === key) {
-        amount += parseInt(value);
-      }
+      if (key !== "click") amount += parseInt(item.count);
     }
   }
 
@@ -26,12 +22,6 @@ function getStorage() {
 }
 
 window.onload = () => getStorage();
-
-function setId() {
-  if (title.innerText === window.mock[0].title) {
-    title.setAttribute("id", window.mock[0].id);
-  }
-}
 
 class Delegate {
   constructor(elem) {
@@ -44,16 +34,15 @@ class Delegate {
     let price = parent.querySelector("p").innerText;
 
     let x = parseFloat(price.match(/\d+[.][0-9]+/));
+    let id = window.mock[0].id;
+    let item = window.mock[0];
 
-    if (title.innerText === window.mock[0].title) {
-      let id = window.mock[0].id;
-      let count = localStorage.getItem(id) || 0;
+    item.count++;
 
-      total = parseFloat(total);
+    total = parseFloat(total);
 
-      localStorage.setItem("total", total += x);
-      localStorage.setItem(id, ++count);
-    }
+    localStorage.setItem("total", total += x);
+    localStorage.setItem(id, JSON.stringify(item));
 
     getStorage();
   }

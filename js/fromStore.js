@@ -29,9 +29,9 @@ function getStorage() {
 
     for (let i = 0; i < localStorage.length - 1; i++) {
       let key = localStorage.key(i);
-      let value = localStorage.getItem(key);
+      let item = JSON.parse(localStorage.getItem(key));
 
-      if (key !== "click") amount += parseInt(value);
+      if (key !== "click") amount += parseInt(item.count);
     }
   }
 
@@ -49,12 +49,12 @@ class Delegate {
   plusItem() {
     let x = item.discountedPrice;
     let id = item.id;
-    let count = localStorage.getItem(id) || 0;
+    item.count++;
 
     total = parseFloat(total);
 
     localStorage.setItem("total", total += x);
-    localStorage.setItem(id, ++count);
+    localStorage.setItem(id, JSON.stringify(item));
 
     getStorage();
   }
