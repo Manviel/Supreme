@@ -1,27 +1,15 @@
 .tag::before, .tag::after { width: 39%; }
 
-.tag { margin-bottom: 90px; }
-
 .bot { margin-bottom: 0; }
 
-.info {
-  padding-bottom: 25px;
-  flex-wrap: wrap;
-}
+.tag::after { height: 100%; }
+
+.info { padding-bottom: 25px; }
 
 .field {
   text-align: left;
   padding-left: 26px;
   width: 225px;
-}
-
-.tag::after {
-  content: '\A';
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.502);
-  cursor: pointer;
 }
 
 .col span {
@@ -73,4 +61,9 @@
 .delivery {
   line-height: 5.417;
   background: #f7f7f7;
+}
+
+.tag {
+  flex: 0 50%;
+  box-sizing: border-box;
 }

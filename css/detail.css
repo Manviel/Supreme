@@ -1,0 +1,6 @@
+.container {
+  max-height: 345px;
+  justify-content: center;
+}
+
+.container img { width: auto; }

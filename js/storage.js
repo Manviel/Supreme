@@ -65,7 +65,7 @@ class Delegate {
   clearStorage() {
     localStorage.clear();
 
-    document.body.children[2].innerHTML = '<h2 class="flex align cent">Your shopping bag is empty. Use Catalog to add new items</h2>';
+    document.body.children[2].innerHTML = '<h2 class="flex align">Your shopping bag is empty. Use Catalog to add new items</h2>';
 
     getStorage();
   }
@@ -73,7 +73,7 @@ class Delegate {
   buyNow() {
     localStorage.clear();
 
-    document.body.children[2].innerHTML = '<h2 class="flex align cent">Thank you for your purchase</h2>';
+    document.body.children[2].innerHTML = '<h2 class="flex align">Thank you for your purchase</h2>';
 
     getStorage();
   }

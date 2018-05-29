@@ -17,11 +17,6 @@
 
   .btn { margin: 30px 0 60px; }
 
-  .tag {
-    flex: 0 50%;
-    box-sizing: border-box;
-  }
-
   .tag img {
     height: 100%;
     width: 145px;
