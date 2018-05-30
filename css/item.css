@@ -1,18 +1,23 @@
-.container { position: relative; }
-
 .info { padding-left: 50px; }
 
 .take { padding-bottom: 20px; }
 
 .room { padding-bottom: 150px; }
 
+.thumb img { max-width: 197px; }
+
 .thumb:hover::after { opacity: 1; }
+
+.container {
+  position: relative;
+  max-width: 590px;
+}
 
 .thumb:after {
   content: '\A';
   position: absolute;
   width: 100%;
-  height: 96%;
+  height: 100%;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.502);
