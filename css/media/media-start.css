@@ -3,6 +3,8 @@
 
   .tag::after { height: 72%; }
 
+  .tag::before { top: 100px; }
+
   .tag:nth-child(4) { display: none; }
 
   .tag:not(:nth-child(3)) { margin-right: 20px; }
@@ -32,6 +34,10 @@
 }
 
 @media (max-width: 767px) {
+  .new, .tag::after { left: 0; }
+
+  .tag::after { height: 65%; }
+
   .tag:nth-child(3) { display: none; }
 
   .tag img { width: 100%; }

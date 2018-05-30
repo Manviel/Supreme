@@ -82,6 +82,8 @@ input::placeholder { color: #a8a8a8; }
 
 .logo-tm:before { content: "Template"; }
 
+.new, .tag::after { left: 5px; }
+
 .logo-tm {
   font-size: 30px;
   line-height: 2.167;
@@ -129,7 +131,6 @@ input::placeholder { color: #a8a8a8; }
   color: #ffffff;
   position: absolute;
   top: 15px;
-  left: 0;
 }
 
 .btn {
@@ -194,10 +195,9 @@ input::placeholder { color: #a8a8a8; }
 
 .tag::after {
   content: '\A';
-  width: 98%;
+  width: 97%;
   height: 75%;
   top: 0;
-  left: 0;
   background: rgba(0, 0, 0, 0.502);
   cursor: pointer;
 }

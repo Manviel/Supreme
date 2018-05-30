@@ -6,6 +6,8 @@
 
 .info { padding-bottom: 25px; }
 
+.new, .tag::after { left: 0; }
+
 .field {
   text-align: left;
   padding-left: 26px;
