@@ -1,0 +1,24 @@
+{
+  "name": "commerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel js -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manviel/Supreme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manviel/Supreme/issues"
+  },
+  "homepage": "https://github.com/Manviel/Supreme#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
