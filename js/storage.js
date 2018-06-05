@@ -32,27 +32,29 @@ function render() {
 
   localStorage.removeItem("click");
 
-  for (let i = 0; i < localStorage.length - 1; i++) {
+  for (let i = 0; i < localStorage.length; i++) {
     let key = localStorage.key(i);
     let item = JSON.parse(localStorage.getItem(key));
 
-    list.innerHTML += `
-      <section class="flex tag px-14 grow">
-        <img src="${item.thumbnail}" alt="${item.id}" class="bot">
-        ${item.hasNew ? '<span class="new">NEW</span>' : ''}
-        <div class="flex col field" id="${item.id}">
-          <h4 class="bold">${item.title}</h4>
-          <p class="px-16 bold">£${item.discountedPrice}</p>
-          <span>Color: ${item.colors}</span>
-          <span>Size: ${item.sizes}</span>
-          <span class="flex align">Quantity:
-            <button class="sign minus" data-action="minusItem"></button>${item.count}
-            <button class="sign plus" data-action="plusItem"></button>
-          </span>
-          <button class="remove bold red" data-action="removeItem">Remove item</button>
-        </div>
-      </section>
-    `;
+    if (key !== "total") {
+      list.innerHTML += `
+        <section class="flex tag px-14 grow">
+          <img src="${item.thumbnail}" alt="${item.id}" class="bot">
+          ${item.hasNew ? '<span class="new">NEW</span>' : ''}
+          <div class="flex col field" id="${item.id}">
+            <h4 class="bold">${item.title}</h4>
+            <p class="px-16 bold">£${item.discountedPrice}</p>
+            <span>Color: ${item.colors}</span>
+            <span>Size: ${item.sizes}</span>
+            <span class="flex align">Quantity:
+              <button class="sign minus" data-action="minusItem"></button>${item.count}
+              <button class="sign plus" data-action="plusItem"></button>
+            </span>
+            <button class="remove bold red" data-action="removeItem">Remove item</button>
+          </div>
+        </section>
+      `;
+    }
   }
 }
 
@@ -65,7 +67,7 @@ class Delegate {
   clearStorage() {
     localStorage.clear();
 
-    document.body.children[2].innerHTML = '<h2 class="flex align">Your shopping bag is empty. Use Catalog to add new items</h2>';
+    document.body.children[4].innerHTML = '<h2 class="flex align">Your shopping bag is empty. Use Catalog to add new items</h2>';
 
     getStorage();
   }
@@ -73,7 +75,7 @@ class Delegate {
   buyNow() {
     localStorage.clear();
 
-    document.body.children[2].innerHTML = '<h2 class="flex align">Thank you for your purchase</h2>';
+    document.body.children[4].innerHTML = '<h2 class="flex align">Thank you for your purchase</h2>';
 
     getStorage();
   }

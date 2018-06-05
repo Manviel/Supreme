@@ -10,11 +10,11 @@ function getStorage() {
   if (localStorage.length > 0) {
     total = localStorage.getItem("total");
 
-    for (let i = 0; i < localStorage.length - 1; i++) {
+    for (let i = 0; i < localStorage.length; i++) {
       let key = localStorage.key(i);
       let item = JSON.parse(localStorage.getItem(key));
 
-      if (key !== "click") amount += parseInt(item.count);
+      if (key !== "click" && key !== "total") amount += item.count;
     }
   }
 
