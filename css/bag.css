@@ -1,12 +1,15 @@
 .tag::before, .tag::after { width: 39%; }
 
-.bot { margin-bottom: 0; }
-
 .tag::after { height: 100%; }
 
 .info { padding-bottom: 25px; }
 
 .new, .tag::after { left: 0; }
+
+.bot {
+  margin-bottom: 0;
+  max-width: 240px;
+}
 
 .field {
   text-align: left;

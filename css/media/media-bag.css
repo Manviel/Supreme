@@ -30,6 +30,8 @@
 
   .top.flex { flex-direction: column; }
 
+  .text:first-child { display: none; }
+
   .bot { margin-bottom: 0px; }
 
   .info { padding-bottom: 15px; }
