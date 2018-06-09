@@ -1,6 +1,6 @@
 let item = JSON.parse(localStorage.getItem("click"));
 
-let info = `
+document.getElementById("list").innerHTML += `
   <section class="area take">
     <div class="flex container">
       <img src="${item.thumbnail}" id="expanded" alt="${item.id}" class="width high">
@@ -16,9 +16,9 @@ let info = `
   </section>
 `;
 
-document.getElementById("list").innerHTML += info;
-
 let bag = document.getElementById("bag");
+
+let total, amount;
 
 function getStorage() {
   total = 0;

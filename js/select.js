@@ -11,7 +11,7 @@ for (let i = 0; i < x.length; i++) {
   let list = document.createElement("DIV");
   list.setAttribute("class", "select-items select-hide");
 
-  for (j = 1; j < elem.length; j++) {
+  for (let j = 1; j < elem.length; j++) {
     let option = document.createElement("DIV");
     option.innerHTML = elem.options[j].innerHTML;
 
@@ -62,7 +62,7 @@ function closeAllSelect(elm) {
     }
   }
 
-  for (i = 0; i < x.length; i++) {
+  for (let i = 0; i < x.length; i++) {
     if (arr.indexOf(i)) {
       list[i].classList.add("select-hide");
     }

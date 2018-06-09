@@ -1,5 +1,7 @@
 let bag = document.getElementById("bag");
 
+let total, amount;
+
 function getStorage() {
   total = 0;
   amount = 0;
