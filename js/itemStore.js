@@ -39,9 +39,10 @@ class Delegate {
 
     item.count++;
 
-    total = parseFloat(total);
+    total = Number(total);
+    total += x;
 
-    localStorage.setItem("total", total += x);
+    localStorage.setItem("total", total.toFixed(2));
     localStorage.setItem(id, JSON.stringify(item));
 
     getStorage();

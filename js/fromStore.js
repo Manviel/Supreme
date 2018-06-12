@@ -11,7 +11,7 @@ document.getElementById("list").innerHTML += `
     <i class="fine px-16 take">Feature fine Italian wool, this elegant suit has pick-stitch edging, cascade buttons at the cuffs</i>
     <p class="price take">£${item.price}</p>
     <div class="top">
-      <button class="btn bold px-24" data-action="plusItem">Add to bag</button>
+      <button class="btn bold px-24" data-action="plusItem">Add this item to your shopping bag</button>
     </div>
   </section>
 `;

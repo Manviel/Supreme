@@ -28,8 +28,6 @@ input::placeholder { color: #a8a8a8; }
 
 .bold { font-weight: bold; }
 
-.mg { padding: 0 60px; }
-
 .flex { display: flex; }
 
 .col { flex-direction: column; }
@@ -84,6 +82,11 @@ input::placeholder { color: #a8a8a8; }
 
 .new, .tag::after { left: 5px; }
 
+.mg {
+  padding: 0 60px;
+  max-width: 1180px;
+}
+
 .logo-tm {
   font-size: 30px;
   line-height: 2.167;
@@ -135,7 +138,7 @@ input::placeholder { color: #a8a8a8; }
 
 .btn {
   width: 338px;
-  height: 73px;
+  min-height: 73px;
   background: #ffffff;
   border: 1px solid #e5e5e5;
   line-height: 2.708;
@@ -211,6 +214,7 @@ input::placeholder { color: #a8a8a8; }
   z-index: 1;
   top: 150px;
   text-align: center;
+  cursor: pointer;
 }
 
 .tag:hover::after,

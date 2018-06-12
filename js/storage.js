@@ -47,8 +47,8 @@ function render() {
             <span>Color: ${item.colors}</span>
             <span>Size: ${item.sizes}</span>
             <span class="flex align">Quantity:
-              <button class="sign minus" data-action="minusItem"></button>${item.count}
-              <button class="sign plus" data-action="plusItem"></button>
+              <button class="sign red" data-action="minusItem">-</button>${item.count}
+              <button class="sign red" data-action="plusItem">+</button>
             </span>
             <button class="remove bold red" data-action="removeItem">Remove item</button>
           </div>

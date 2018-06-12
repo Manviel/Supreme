@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel js -d dist"
+    "build": "babel js -d dist",
+    "start": "browser-sync start --server --index start.html --files='*'"
   },
   "repository": {
     "type": "git",

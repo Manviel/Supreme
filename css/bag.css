@@ -25,18 +25,12 @@
 .sign {
   border: 0;
   background-color: transparent;
-  width: 8px;
+  width: 18px;
+  height: 18px;
   margin: 10px;
-}
-
-.plus {
-  background: url(../img/plus.png);
-  height: 8px;
-}
-
-.minus {
-  background: url(../img/minus.png);
-  height: 2px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 24px;
 }
 
 .remove {

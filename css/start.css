@@ -2,7 +2,10 @@
 
 .mark { height: 165px; }
 
-.high { height: 100%; }
+.high {
+  height: 100%;
+  max-width: 100%;
+}
 
 .block {
   max-height: 385px;

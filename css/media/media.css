@@ -113,3 +113,11 @@
 @media (min-width: 1440px) {
   body { padding: 0 70px; }
 }
+
+@media (min-width: 1330px) {
+  .slider { padding: 0 30px; }
+}
+
+@media (max-width: 375px) {
+  body { overflow-x: scroll; }
+}
