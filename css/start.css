@@ -1,10 +1,15 @@
-.banners { margin-bottom: 50px; }
+.banners {
+  margin-bottom: 50px;
+}
 
-.mark { height: 165px; }
+.mark {
+  height: 165px;
+}
 
 .high {
   height: 100%;
   max-width: 100%;
+  width: 100%;
 }
 
 .block {

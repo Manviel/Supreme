@@ -1,6 +1,6 @@
 .wrapper {
   height: 769px;
-  max-width: 1330px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -20,11 +20,11 @@
 }
 
 .buttons {
+  min-width: 1300px;
   position: absolute;
   top: 50%;
-  z-index: 10;
-  font-size: 0;
-  min-width: 1300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .control {
@@ -50,11 +50,16 @@
 .indicators {
   background: #f7f7f7;
   height: 80px;
+  width: 100%;
 }
 
-.first { display: inline; }
+.first {
+  display: inline;
+}
 
-.active { background-color: #f14a58; }
+.active {
+  background-color: #f14a58;
+}
 
 @keyframes fadein {
   from {

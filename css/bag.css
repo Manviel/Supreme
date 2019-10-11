@@ -1,14 +1,5 @@
-.tag::before, .tag::after { width: 39%; }
-
-.tag::after { height: 100%; }
-
-.info { padding-bottom: 25px; }
-
-.new, .tag::after { left: 0; }
-
-.bot {
-  margin-bottom: 0;
-  max-width: 240px;
+.info {
+  padding-bottom: 25px;
 }
 
 .field {
@@ -60,9 +51,4 @@
 .delivery {
   line-height: 5.417;
   background: #f7f7f7;
-}
-
-.tag {
-  flex: 0 50%;
-  box-sizing: border-box;
 }

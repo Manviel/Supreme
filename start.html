@@ -1,196 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./css/start.css" />
+    <link rel="stylesheet" href="./css/media/media.css" />
+    <link rel="stylesheet" href="./css/media/media-start.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Homepage</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/slider.css">
-  <link rel="stylesheet" href="./css/start.css">
-  <link rel="stylesheet" href="./css/media/media.css">
-  <link rel="stylesheet" href="./css/media/media-start.css">
-</head>
-
-<body>
-  <header class="mg border-bottom">
-    <article class="inch flex space">
-      <a href="./start.html">
-        <h1 class="logo-tm"></h1>
-      </a>
-      <section class="login-bag flex space align">
-        <a href="#" class="text px-12">E-mail sign up</a>
-        <a href="./shopping-bag.html" class="text bag px-12">Bag (0)</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggle()">
-          <img src="./img/ico_menu.png" alt="ico" id="ico">
+  <body>
+    <header class="mg border-bottom">
+      <article class="inch flex space">
+        <a href="./start.html">
+          <h1 class="logo-tm"></h1>
         </a>
+        <section class="login-bag flex space align">
+          <a href="#" class="text px-12">E-mail sign up</a>
+          <a href="./shopping-bag.html" class="text bag px-12">Bag (0)</a>
+          <a href="javascript:void(0);" class="icon" onclick="toggle()">
+            <img src="./img/ico_menu.png" alt="ico" id="ico" />
+          </a>
+        </section>
+      </article>
+      <nav class="inch flex side" id="nav">
+        <ul class="nav width bold flex space">
+          <li>Women</li>
+          <li>Men</li>
+          <li>Handbags</li>
+          <li>Accessories</li>
+          <li>Sale</li>
+          <li>New Arrivals</li>
+          <li>Clearence</li>
+          <li>Store Locator</li>
+          <li>
+            <input type="text" placeholder="Style Name" class="form_input" />
+            <img src="./img/ico.png" alt="ico" class="form_ico" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <article class="wrapper border-bottom">
+      <section class="slider">
+        <div class="slide first">
+          <a href="./catalog.html">
+            <img src="./img/1.jpg" alt="1" class="width" />
+          </a>
+        </div>
+        <div class="slide">
+          <a href="./item.html">
+            <img src="./img/2.jpg" alt="2" class="width" />
+          </a>
+        </div>
+        <div class="slide">
+          <a href="./catalog.html">
+            <img src="./img/3.jpg" alt="3" class="width" />
+          </a>
+        </div>
+        <aside class="buttons flex space">
+          <button class="control" id="prev">&lt;</button>
+          <button class="control" id="next">&gt;</button>
+        </aside>
       </section>
     </article>
-    <nav class="inch flex side" id="nav">
-      <ul class="nav width bold flex space">
-        <li>Women</li>
-        <li>Men</li>
-        <li>Handbags</li>
-        <li>Accessories</li>
-        <li>Sale</li>
-        <li>New Arrivals</li>
-        <li>Clearence</li>
-        <li>Store Locator</li>
-        <li>
-          <input type="text" placeholder="Style Name" class="form_input">
-          <img src="./img/ico.png" alt="ico" class="form_ico">
-        </li>
-      </ul>
-    </nav>
-  </header>
 
-  <article class="wrapper border-bottom">
-    <section class="slider">
-      <div class="slide first">
-        <a href="./catalog.html">
-          <img src="./img/1.jpg" alt="1" class="width">
-        </a>
-      </div>
-      <div class="slide">
-        <a href="./item.html">
-          <img src="./img/2.jpg" alt="2" class="width">
-        </a>
-      </div>
-      <div class="slide">
-        <a href="./catalog.html">
-          <img src="./img/3.jpg" alt="3" class="width">
-        </a>
-      </div>
-      <aside class="buttons flex space">
-        <button class="control" id="prev">&lt;</button>
-        <button class="control" id="next">&gt;</button>
-      </aside>
-    </section>
-  </article>
+    <div class="flex indicators cent align border-bottom">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
-  <div class="flex indicators cent align border-bottom">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-
-  <article class="banners flex border-bottom">
-    <a href="./item.html" class="block width border-right">
-      <img src="./img/left.png" alt="Nike Red" class="high">
-      <h3 class="title bold pos">Nike Red</h3>
-    </a>
-    <section class="block width right">
-      <a href="./catalog.html" id="sale">
-        <img src="./img/right.png" alt="Caps & Hats" class="high">
+    <article class="banners flex border-bottom">
+      <a href="./item.html" class="block width border-right">
+        <img src="./img/left.png" alt="Nike Red" class="high" />
+        <h3 class="title bold pos">Nike Red</h3>
       </a>
-      <div class="flex col cent align pos">
-        <h3 class="title bold">Caps & Hats</h3>
-        <i class="sale px-16">Sale -50%</i>
-      </div>
-    </section>
-  </article>
-
-  <article class="flex cent align mark">
-    <h1 class="arrivals bold">New Arrivals</h1>
-  </article>
-
-  <article class="mg top flex space">
-    <section class="tag px-14">
-      <img src="./img/ph1.png" alt="ph1" class="bot">
-      <span class="new">NEW</span>
-      <h4 class="bold">Only Skinny Jeans</h4>
-      <p>£65.50</p>
-    </section>
-    <section class="tag px-14">
-      <img src="./img/ph2.png" alt="ph2" class="bot">
-      <span class="new">NEW</span>
-      <h4 class="bold">Neck Knitted Jumper</h4>
-      <p>£76.25</p>
-    </section>
-    <section class="tag px-14">
-      <img src="./img/ph3.png" alt="ph3" class="bot">
-      <h4 class="bold">Turtle Neck Jumper in Rib</h4>
-      <p>£130.25</p>
-    </section>
-    <section class="tag px-14">
-      <img src="./img/ph4.png" alt="ph4" class="bot">
-      <h4 class="bold">With Pathwork Crochet</h4>
-      <p>£80.60</p>
-    </section>
-  </article>
-
-  <article class="all flex cent align border-bottom">
-    <button class="btn bold px-24">All arrivals</button>
-  </article>
-
-  <article class="flex down border-bottom">
-    <div class="flex grow border-right mg">
-      <section class="flex col grow">
-        <h3 class="label bold px-16">Quick Links</h3>
-        <div class="flex col">
-          <span class="px-14">Store locator</span>
-          <span class="px-14">Gift cards</span>
-          <span class="px-14">Size guide</span>
-          <span class="px-14">About us</span>
-          <span class="px-14">Support</span>
+      <section class="block width right">
+        <a href="./catalog.html" id="sale">
+          <img src="./img/right.png" alt="Caps & Hats" class="high" />
+        </a>
+        <div class="flex col cent align pos">
+          <h3 class="title bold">Caps & Hats</h3>
+          <i class="sale px-16">Sale -50%</i>
         </div>
       </section>
-      <section class="flex col grow">
-        <h3 class="label bold px-16">Customer Care</h3>
-        <div class="flex col">
-          <span class="px-14">Customer service</span>
-          <span class="px-14">Track my order</span>
-          <span class="px-14">Return policy</span>
-          <span class="px-14">Shipping & delivery</span>
-          <span class="px-14">Contact us</span>
-          <span class="px-14">Careers</span>
-        </div>
+    </article>
+
+    <article class="flex cent align mark">
+      <h1 class="arrivals bold">New Arrivals</h1>
+    </article>
+
+    <article class="mg top flex space">
+      <section class="tag px-14">
+        <img src="./img/ph1.png" alt="ph1" class="bot" />
+        <span class="new">NEW</span>
+        <h4 class="bold">Only Skinny Jeans</h4>
+        <p>£65.50</p>
       </section>
-    </div>
-    <div class="flex grow col">
-      <section class="flex grow sm">
-        <div class="flex col grow area">
-          <h3 class="label bold px-16">Questions</h3>
-          <span class="us">Tweet us
-            <b>@template</b>
-          </span>
-        </div>
-        <div class="flex col grow">
-          <h3 class="label bold px-16">Order by phone</h3>
-          <span>8-800-409-47-12</span>
-        </div>
+      <section class="tag px-14">
+        <img src="./img/ph2.png" alt="ph2" class="bot" />
+        <span class="new">NEW</span>
+        <h4 class="bold">Neck Knitted Jumper</h4>
+        <p>£76.25</p>
       </section>
-      <section class="flex col grow area two">
-        <div class="service px-16">
-          <i>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</i>
-        </div>
-        <article class="flex space align">
-          <div class="social" id="before">
-            <img src="./img/fb.png" alt="facebook">
-            <img src="./img/twi.png" alt="twitter">
+      <section class="tag px-14">
+        <img src="./img/ph3.png" alt="ph3" class="bot" />
+        <h4 class="bold">Turtle Neck Jumper in Rib</h4>
+        <p>£130.25</p>
+      </section>
+      <section class="tag px-14">
+        <img src="./img/ph4.png" alt="ph4" class="bot" />
+        <h4 class="bold">With Pathwork Crochet</h4>
+        <p>£80.60</p>
+      </section>
+    </article>
+
+    <article class="all flex cent align border-bottom">
+      <a href="./catalog.html">
+        <button class="btn bold px-24">All arrivals</button>
+      </a>
+    </article>
+
+    <article class="mg flex border-bottom">
+      <div class="flex grow border-right">
+        <section class="flex col grow">
+          <h3 class="label bold px-16">Quick Links</h3>
+          <div class="flex col">
+            <span class="px-14">Store locator</span>
+            <span class="px-14">Gift cards</span>
+            <span class="px-14">Size guide</span>
+            <span class="px-14">About us</span>
+            <span class="px-14">Support</span>
           </div>
-        </article>
+        </section>
+        <section class="flex col grow">
+          <h3 class="label bold px-16">Customer Care</h3>
+          <div class="flex col">
+            <span class="px-14">Customer service</span>
+            <span class="px-14">Track my order</span>
+            <span class="px-14">Return policy</span>
+            <span class="px-14">Shipping & delivery</span>
+            <span class="px-14">Contact us</span>
+            <span class="px-14">Careers</span>
+          </div>
+        </section>
+      </div>
+
+      <div class="flex grow col">
+        <section class="flex sm">
+          <div class="flex col grow area">
+            <h3 class="label bold px-16">Questions</h3>
+            <span class="us">
+              Tweet us
+              <b>@template</b>
+            </span>
+          </div>
+          <div class="flex col grow">
+            <h3 class="label bold px-16">Order by phone</h3>
+            <span>8-800-409-47-12</span>
+          </div>
+        </section>
+
+        <section class="flex col area two">
+          <div class="service px-16">
+            <i
+              >We have our own delivery service which operates in 23 major
+              European cities. Delivery time - 3-5 days.</i
+            >
+          </div>
+          <article class="flex space align">
+            <div class="social" id="before">
+              <img src="./img/fb.png" alt="facebook" />
+              <img src="./img/twi.png" alt="twitter" />
+            </div>
+          </article>
+        </section>
+      </div>
+    </article>
+
+    <footer class="mg flex space align">
+      <h6>&copy; 2010-2015, The Template Group inc.</h6>
+      <h3 class="bold">
+        Share
+        <span class="share px-12">1437</span>
+      </h3>
+      <section class="flex space" id="after">
+        <h6 class="bold px-12 foot">Legal notice</h6>
+        <h6 class="bold px-12 foot">Privacy policy</h6>
+        <h6 class="bold px-12">Site map</h6>
       </section>
-    </div>
-  </article>
+    </footer>
 
-  <footer class="mg flex space align">
-    <h6>&copy; 2010-2015, The Template Group inc.</h6>
-    <h3 class="bold">Share
-      <span class="share px-12">1437</span>
-    </h3>
-    <section class="flex foot space" id="after">
-      <h6 class="bold px-12">Legal notice</h6>
-      <h6 class="bold px-12">Privacy policy</h6>
-      <h6 class="bold px-12">Site map</h6>
-    </section>
-  </footer>
-
-  <script src="./dist/slider.js"></script>
-  <script src="./dist/toggle.js"></script>
-  <script src="./dist/resize.js"></script>
-  <script src="./dist/start.js"></script>
-</body>
-
+    <script src="./dist/slider.js"></script>
+    <script src="./dist/toggle.js"></script>
+    <script src="./dist/resize.js"></script>
+    <script src="./dist/start.js"></script>
+  </body>
 </html>

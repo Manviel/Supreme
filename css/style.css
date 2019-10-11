@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,14 @@ body {
   box-sizing: border-box;
   font-family: "Open Sans";
   overflow-x: hidden;
+  max-width: 1330px;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -14,77 +24,145 @@ a {
   color: #000000;
 }
 
-li { list-style-type: none; }
+li {
+  list-style-type: none;
+}
 
-i { color: rgb(117, 117, 117); }
+i {
+  color: rgb(117, 117, 117);
+}
 
-footer { height: 80px; }
+footer {
+  height: 80px;
+}
 
-h6 { font-family: "Roboto"; }
+h6 {
+  font-family: "Roboto";
+}
 
-input::placeholder { color: #a8a8a8; }
+input::placeholder {
+  color: #a8a8a8;
+}
 
-.red { color: #f14a58; }
+.red {
+  color: #f14a58;
+}
 
-.bold { font-weight: bold; }
+.bold {
+  font-weight: bold;
+}
 
-.flex { display: flex; }
+.flex {
+  display: flex;
+}
 
-.col { flex-direction: column; }
+.col {
+  flex-direction: column;
+}
 
-.space { justify-content: space-between; }
+.space {
+  justify-content: space-between;
+}
 
-.inch { height: 60px; }
+.inch {
+  height: 60px;
+}
 
-.login-bag { width: 200px; }
+.login-bag {
+  width: 200px;
+}
 
-.width { width: 100%; }
+.width {
+  width: 100%;
+}
 
-.cent { justify-content: center; }
+.cent {
+  justify-content: center;
+}
 
-.align { align-items: center; }
+.align {
+  align-items: center;
+}
 
-.px-12 { font-size: 12px; }
+.px-12 {
+  font-size: 12px;
+}
 
-.px-14 { font-size: 14px; }
+.px-14 {
+  font-size: 14px;
+}
 
-.px-16 { font-size: 16px; }
+.px-16 {
+  font-size: 16px;
+}
 
-.px-24 { font-size: 24px; }
+.px-24 {
+  font-size: 24px;
+}
 
-.area { padding-left: 23px; }
+.area {
+  padding-left: 23px;
+  padding-bottom: 10px;
+}
 
-.foot { width: 280px; }
+.foot {
+  margin-right: 10px;
+}
 
-.down { min-height: 450px; }
+.down {
+  min-height: 450px;
+}
 
-.all { min-height: 156px; }
+.all {
+  min-height: 156px;
+  width: 100%;
+}
 
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
 
-.border-right { border-right: 1px solid #e5e5e5; }
+.border-right {
+  border-right: 1px solid #e5e5e5;
+}
 
-.bot { margin-bottom: 38px; }
+.bot {
+  height: 340px;
+  width: 240px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 
-.right { background: #f7f7f7; }
+.tag {
+  margin-bottom: 38px;
+  text-align: center;
+}
 
-.top { padding-top: 60px; }
+.right {
+  background: #f7f7f7;
+}
 
-.icon { display: none; }
+.top {
+  padding-top: 60px;
+}
 
-.social img { margin-right: 25px; }
+.icon {
+  display: none;
+}
 
-.tag h4 { line-height: 1.714; }
+.social img {
+  margin-right: 25px;
+}
 
-.tag p { line-height: 3.643; }
-
-.logo-tm:before { content: "Template"; }
-
-.new, .tag::after { left: 5px; }
+.logo-tm:before {
+  content: "Template";
+}
 
 .mg {
   padding: 0 60px;
   max-width: 1180px;
+  width: 100%;
 }
 
 .logo-tm {
@@ -121,13 +199,6 @@ input::placeholder { color: #a8a8a8; }
   margin-right: 16px;
 }
 
-.tag {
-  font-family: "Roboto";
-  text-align: center;
-  position: relative;
-  width: 250px;
-}
-
 .new {
   padding: 8px 12px;
   background: #f14a58;
@@ -157,19 +228,17 @@ input::placeholder { color: #a8a8a8; }
 
 .us::before {
   content: url(../img/twi_ico.png);
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .service {
   font-family: "Times New Roman";
   line-height: 1.875;
-  width: 302px;
   margin: 75px 0 45px;
 }
 
 .grow {
-  flex-grow: 1;
-  align-self: stretch;
+  width: 50%;
 }
 
 .share {
@@ -181,7 +250,7 @@ input::placeholder { color: #a8a8a8; }
 }
 
 .share::before {
-  content: '';
+  content: "";
   border: 5px solid transparent;
   border-top-width: 5px;
   border-bottom-width: 5px;
@@ -189,42 +258,6 @@ input::placeholder { color: #a8a8a8; }
   position: absolute;
   margin: 10px 0 0 -15px;
 }
-
-.tag::after,
-.tag::before {
-  position: absolute;
-  opacity: 0;
-}
-
-.tag::after {
-  content: '\A';
-  width: 97%;
-  height: 75%;
-  top: 0;
-  background: rgba(0, 0, 0, 0.502);
-  cursor: pointer;
-}
-
-.tag::before {
-  content: 'View item';
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 2.955;
-  width: 100%;
-  z-index: 1;
-  top: 150px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.tag:hover::after,
-.tag:hover::before,
-.tag:hover h4 {
-  opacity: 1;
-  color: #f14a58;
-}
-
-.tag:hover p { font-weight: bold; }
 
 .btn:hover {
   border: 1px solid #f14a58;

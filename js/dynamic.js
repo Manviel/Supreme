@@ -1,6 +1,6 @@
 let list = document.getElementById("list");
 
-list.innerHTML = '';
+list.innerHTML = "";
 
 window.catalog.sort((a, b) => {
   return new Date(b.dateAdded) - new Date(a.dateAdded);
@@ -22,13 +22,28 @@ for (let i = 0; i < window.catalog.length; i++) {
   let item = window.catalog[i];
 
   list.innerHTML += `
-    <a href="./detail.html" class="tag px-14" data-action="goToDetail">
-      <img src="${item.thumbnail}" alt="${item.id}" class="bot">
-      ${item.hasNew ? '<span class="new">NEW</span>' : ''}
-      <h4 class="bold">${item.title}</h4>
-      ${item.discountedPrice !== item.price ? `<i>£${item.price} -${100 - ((item.discountedPrice * 100) / item.price)}%</i>` : ''}
-      <p class="inline">${item.discountedPrice === null ? item.placeholder : '£' + item.discountedPrice}</p>
-    </a>
+    <section class="tag">
+      <div class="bot tag" style="background-image: url(${
+        item.thumbnail
+      })"></div>
+      <a href="./detail.html" class="px-14" data-action="goToDetail">
+        ${item.hasNew ? '<span class="new">NEW</span>' : ""}
+        <h4 class="bold">${item.title}</h4>
+        ${
+          item.discountedPrice !== item.price
+            ? `<i>£${item.price} -${100 -
+                (item.discountedPrice * 100) / item.price}%</i>`
+            : ""
+        }
+        <p class="inline">
+        ${
+          item.discountedPrice === null
+            ? item.placeholder
+            : "£" + item.discountedPrice
+        }
+        </p>
+      </a>
+    </section>
   `;
 
   if (i === 1 && mediaSize <= 760 && mediaSize > 370) {

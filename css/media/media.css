@@ -1,35 +1,43 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url('../../fonts/OpenSans-Regular.ttf');
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url('../../fonts/Roboto-Regular.ttf');
-}
-
 @media (max-width: 1024px) {
-  .mg { padding: 0 39px; }
+  .mg {
+    padding: 0 39px;
+  }
 
-  .right { background: 0; }
+  .right {
+    background: 0;
+  }
 
-  .right .high { width: 297px; }
+  .right .high {
+    width: 297px;
+  }
 
-  .tag img { width: 205px; }
+  .service {
+    display: none;
+  }
 
-  .service { display: none; }
+  .grow.border-right {
+    border-right: 0;
+  }
 
-  .grow.border-right {border-right: 0; }
+  .sm {
+    flex-direction: column;
+  }
 
-  .sm { flex-direction: column; }
+  .sm .grow {
+    padding-left: 23px;
+  }
 
-  .sm .grow { padding-left: 23px; }
+  .sm .grow:nth-child(2) .label {
+    padding-top: 0;
+  }
 
-  .sm .grow:nth-child(2) .label { padding-top: 0; }
+  .down.width {
+    width: auto;
+  }
 
-  .down.width { width: auto; }
-
-  .pos { right: 50px; }
+  .pos {
+    right: 50px;
+  }
 
   .form_input {
     width: 0;
@@ -44,29 +52,53 @@
 }
 
 @media (max-width: 767px) {
-  .mg { padding: 0 20px; }
+  .mg {
+    padding: 0 20px;
+  }
 
-  .logo-tm:before { content: "TL"; }
+  .logo-tm:before {
+    content: "TL";
+  }
 
-  .side ul { flex-direction: column; }
+  .side ul {
+    flex-direction: column;
+  }
 
-  .icon { display: block; }
+  .icon {
+    display: block;
+  }
 
-  .right { display: none; }
-  
-  .high { width: 100%; }
+  .right {
+    display: none;
+  }
 
-  .down { flex-direction: column; }
+  .high {
+    width: 100%;
+  }
 
-  .down.mg { padding: 0; }
+  .down {
+    flex-direction: column;
+  }
 
-  .sm .grow { padding-left: 0; }
+  .down.mg {
+    padding: 0;
+  }
 
-  .two { padding: 0 20px; }
+  .sm .grow {
+    padding-left: 0;
+  }
 
-  .social img { margin-right: 10px; }
+  .two {
+    padding: 0 20px;
+  }
 
-  .pos { top: 30px; }
+  .social img {
+    margin-right: 10px;
+  }
+
+  .pos {
+    top: 30px;
+  }
 
   .label {
     padding-top: 0;
@@ -110,14 +142,8 @@
   }
 }
 
-@media (min-width: 1440px) {
-  body { padding: 0 70px; }
-}
-
-@media (min-width: 1330px) {
-  .slider { padding: 0 30px; }
-}
-
 @media (max-width: 375px) {
-  body { overflow-x: scroll; }
+  body {
+    overflow-x: scroll;
+  }
 }
