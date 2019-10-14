@@ -1,0 +1,59 @@
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.app-header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.flex {
+  display: flex;
+}
+
+.space {
+  justify-content: space-between;
+}
+
+.align {
+  align-items: center;
+}
+
+.logo-tm {
+  font-size: 30px;
+  margin: 15px 0 0;
+}
+
+.px-12 {
+  font-size: 12px;
+}
+
+.bag {
+  margin-left: 16px;
+}
+
+.nav {
+  font-size: 13px;
+  line-height: 5;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.form-input {
+  height: 30px;
+  width: 100px;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.btn {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 8px 20px 6px;
+}

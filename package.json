@@ -1,25 +1,18 @@
 {
-  "name": "commerce",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "stencil",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil App Starter",
   "scripts": {
-    "build": "babel js -d dist",
-    "start": "browser-sync start --server --index start.html --files='*'"
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Manviel/Supreme.git"
+  "dependencies": {
+    "@stencil/core": "1.7.1",
+    "@stencil/router": "^1.0.1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Manviel/Supreme/issues"
-  },
-  "homepage": "https://github.com/Manviel/Supreme#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
-  }
+  "license": "MIT"
 }
