@@ -1,0 +1,20 @@
+.app-card {
+  text-align: center;
+  position: relative;
+  width: 240px;
+}
+
+.bot {
+  height: 340px;
+  background-size: cover;
+  background-position: center;
+}
+
+.new {
+  padding: 8px 12px;
+  background: #f14a58;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

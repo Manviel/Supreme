@@ -1,5 +1,32 @@
 import { Component, h } from "@stencil/core";
 
+const cards = [
+  {
+    src: "../../assets/img/ph1.png",
+    status: "new",
+    title: "Only Skinny Jeans",
+    price: "65.50"
+  },
+  {
+    src: "../../assets/img/ph2.png",
+    status: "new",
+    title: "Neck Knitted Jumper",
+    price: "76.25"
+  },
+  {
+    src: "../../assets/img/ph3.png",
+    status: "old",
+    title: "Turtle Neck Jumper in Rib",
+    price: "130.25"
+  },
+  {
+    src: "../../assets/img/ph4.png",
+    status: "old",
+    title: "With Pathwork Crochet",
+    price: "80.60"
+  }
+];
+
 @Component({
   tag: "app-home",
   styleUrl: "app-home.css"
@@ -28,8 +55,19 @@ export class AppHome {
 
         <h2 class="arrivals">New Arrivals</h2>
 
+        <article class="flex space">
+          {cards.map(c => (
+            <app-card
+              src={c.src}
+              status={c.status}
+              title={c.title}
+              price={c.price}
+            />
+          ))}
+        </article>
+
         <stencil-route-link url="/profile/stencil">
-          <button class="btn-large">All arrivals</button>
+          <button class="btn large bold">All arrivals</button>
         </stencil-route-link>
       </div>
     );

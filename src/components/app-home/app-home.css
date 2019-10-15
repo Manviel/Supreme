@@ -9,12 +9,11 @@
   width: 100%;
 }
 
-.flex {
-  display: flex;
-}
-
 .col {
   flex-direction: column;
+}
+
+.align {
   align-items: center;
 }
 
@@ -53,10 +52,8 @@
   width: 100%;
 }
 
-.btn-large {
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
+.large {
   padding: 20px 60px 18px;
   font-size: 28px;
-  font-weight: bold;
+  margin-top: 38px;
 }
