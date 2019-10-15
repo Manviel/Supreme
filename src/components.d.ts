@@ -16,6 +16,7 @@ export namespace Components {
     'status': string;
     'title': string;
   }
+  interface AppCatalog {}
   interface AppFooter {}
   interface AppHeader {}
   interface AppHome {}
@@ -37,6 +38,12 @@ declare global {
   var HTMLAppCardElement: {
     prototype: HTMLAppCardElement;
     new (): HTMLAppCardElement;
+  };
+
+  interface HTMLAppCatalogElement extends Components.AppCatalog, HTMLStencilElement {}
+  var HTMLAppCatalogElement: {
+    prototype: HTMLAppCatalogElement;
+    new (): HTMLAppCatalogElement;
   };
 
   interface HTMLAppFooterElement extends Components.AppFooter, HTMLStencilElement {}
@@ -77,6 +84,7 @@ declare global {
   interface HTMLElementTagNameMap {
     'app-bag': HTMLAppBagElement;
     'app-card': HTMLAppCardElement;
+    'app-catalog': HTMLAppCatalogElement;
     'app-footer': HTMLAppFooterElement;
     'app-header': HTMLAppHeaderElement;
     'app-home': HTMLAppHomeElement;
@@ -94,6 +102,7 @@ declare namespace LocalJSX {
     'status'?: string;
     'title'?: string;
   }
+  interface AppCatalog {}
   interface AppFooter {}
   interface AppHeader {}
   interface AppHome {}
@@ -104,6 +113,7 @@ declare namespace LocalJSX {
   interface IntrinsicElements {
     'app-bag': AppBag;
     'app-card': AppCard;
+    'app-catalog': AppCatalog;
     'app-footer': AppFooter;
     'app-header': AppHeader;
     'app-home': AppHome;
@@ -121,6 +131,7 @@ declare module "@stencil/core" {
     interface IntrinsicElements {
       'app-bag': LocalJSX.AppBag & JSXBase.HTMLAttributes<HTMLAppBagElement>;
       'app-card': LocalJSX.AppCard & JSXBase.HTMLAttributes<HTMLAppCardElement>;
+      'app-catalog': LocalJSX.AppCatalog & JSXBase.HTMLAttributes<HTMLAppCatalogElement>;
       'app-footer': LocalJSX.AppFooter & JSXBase.HTMLAttributes<HTMLAppFooterElement>;
       'app-header': LocalJSX.AppHeader & JSXBase.HTMLAttributes<HTMLAppHeaderElement>;
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;

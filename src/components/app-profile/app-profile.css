@@ -54,6 +54,11 @@
   background-color: #f14a58;
 }
 
+.catalog {
+  margin: 28px 0;
+  justify-content: center;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;

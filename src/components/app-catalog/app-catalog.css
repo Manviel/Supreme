@@ -1,0 +1,52 @@
+.app-catalog {
+  margin-bottom: 38px;
+}
+
+.red {
+  color: #f14a58;
+}
+
+.ban {
+  color: rgb(117, 117, 117);
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+}
+
+.white {
+  color: #fff;
+}
+
+.all {
+  justify-content: center;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.cards {
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.block {
+  position: relative;
+}
+
+.abs {
+  width: 210px;
+  position: absolute;
+  bottom: 55px;
+  left: 20%;
+}
+
+.sale {
+  font-family: "Times New Roman";
+  line-height: 1.625;
+}
+
+.high {
+  height: 100%;
+  width: 100%;
+}

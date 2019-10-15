@@ -21,7 +21,7 @@ export class AppBag {
         <article class="flex align space storage">
           <p class="total bold">Clear bag</p>
 
-          <stencil-route-link url="/profile">
+          <stencil-route-link url="/catalog">
             <button class="btn large bold">Buy now</button>
           </stencil-route-link>
 

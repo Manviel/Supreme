@@ -71,6 +71,12 @@ export class AppProfile {
             ></span>
           ))}
         </div>
+
+        <div class="flex catalog">
+          <stencil-route-link url="/catalog">
+            <button class="btn large bold">Buy now</button>
+          </stencil-route-link>
+        </div>
       </article>
     );
   }
