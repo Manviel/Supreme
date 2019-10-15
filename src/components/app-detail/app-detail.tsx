@@ -61,6 +61,8 @@ export class AppDetail {
             <button class="btn bold large">Add item to Shopping bag</button>
           </form>
         </article>
+
+        <app-banner></app-banner>
       </div>
     );
   }

@@ -10,6 +10,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface AppBag {}
+  interface AppBanner {}
   interface AppCard {
     'price': string;
     'src': string;
@@ -33,6 +34,12 @@ declare global {
   var HTMLAppBagElement: {
     prototype: HTMLAppBagElement;
     new (): HTMLAppBagElement;
+  };
+
+  interface HTMLAppBannerElement extends Components.AppBanner, HTMLStencilElement {}
+  var HTMLAppBannerElement: {
+    prototype: HTMLAppBannerElement;
+    new (): HTMLAppBannerElement;
   };
 
   interface HTMLAppCardElement extends Components.AppCard, HTMLStencilElement {}
@@ -90,6 +97,7 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'app-bag': HTMLAppBagElement;
+    'app-banner': HTMLAppBannerElement;
     'app-card': HTMLAppCardElement;
     'app-catalog': HTMLAppCatalogElement;
     'app-detail': HTMLAppDetailElement;
@@ -104,6 +112,7 @@ declare global {
 
 declare namespace LocalJSX {
   interface AppBag {}
+  interface AppBanner {}
   interface AppCard {
     'price'?: string;
     'src'?: string;
@@ -121,6 +130,7 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'app-bag': AppBag;
+    'app-banner': AppBanner;
     'app-card': AppCard;
     'app-catalog': AppCatalog;
     'app-detail': AppDetail;
@@ -140,6 +150,7 @@ declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
       'app-bag': LocalJSX.AppBag & JSXBase.HTMLAttributes<HTMLAppBagElement>;
+      'app-banner': LocalJSX.AppBanner & JSXBase.HTMLAttributes<HTMLAppBannerElement>;
       'app-card': LocalJSX.AppCard & JSXBase.HTMLAttributes<HTMLAppCardElement>;
       'app-catalog': LocalJSX.AppCatalog & JSXBase.HTMLAttributes<HTMLAppCatalogElement>;
       'app-detail': LocalJSX.AppDetail & JSXBase.HTMLAttributes<HTMLAppDetailElement>;

@@ -31,6 +31,7 @@ export class AppHeader {
             <li>Store Location</li>
             <li>
               <input type="text" placeholder="Style Name" class="form-input" />
+              <img src="../../assets/img/ico.png" alt="search" />
             </li>
           </ul>
         </nav>
