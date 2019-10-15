@@ -13,7 +13,9 @@ export class AppCard {
   render() {
     return (
       <section class="app-card">
-        <div style={{ "background-image": `url(${this.src})` }} class="bot" />
+        <stencil-route-link url="/detail">
+          <div style={{ "background-image": `url(${this.src})` }} class="bot" />
+        </stencil-route-link>
         {this.status === "new" && <span class="new">NEW</span>}
         <h4 class="bold">{this.title}</h4>
         <p>£{this.price}</p>

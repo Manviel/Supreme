@@ -195,7 +195,6 @@ input::placeholder {
 }
 
 .bag::before {
-  content: url(../img/bag.png);
   margin-right: 16px;
 }
 
@@ -227,7 +226,6 @@ input::placeholder {
 }
 
 .us::before {
-  content: url(../img/twi_ico.png);
   margin-right: 10px;
 }
 

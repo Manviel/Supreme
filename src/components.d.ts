@@ -17,6 +17,7 @@ export namespace Components {
     'title': string;
   }
   interface AppCatalog {}
+  interface AppDetail {}
   interface AppFooter {}
   interface AppHeader {}
   interface AppHome {}
@@ -44,6 +45,12 @@ declare global {
   var HTMLAppCatalogElement: {
     prototype: HTMLAppCatalogElement;
     new (): HTMLAppCatalogElement;
+  };
+
+  interface HTMLAppDetailElement extends Components.AppDetail, HTMLStencilElement {}
+  var HTMLAppDetailElement: {
+    prototype: HTMLAppDetailElement;
+    new (): HTMLAppDetailElement;
   };
 
   interface HTMLAppFooterElement extends Components.AppFooter, HTMLStencilElement {}
@@ -85,6 +92,7 @@ declare global {
     'app-bag': HTMLAppBagElement;
     'app-card': HTMLAppCardElement;
     'app-catalog': HTMLAppCatalogElement;
+    'app-detail': HTMLAppDetailElement;
     'app-footer': HTMLAppFooterElement;
     'app-header': HTMLAppHeaderElement;
     'app-home': HTMLAppHomeElement;
@@ -103,6 +111,7 @@ declare namespace LocalJSX {
     'title'?: string;
   }
   interface AppCatalog {}
+  interface AppDetail {}
   interface AppFooter {}
   interface AppHeader {}
   interface AppHome {}
@@ -114,6 +123,7 @@ declare namespace LocalJSX {
     'app-bag': AppBag;
     'app-card': AppCard;
     'app-catalog': AppCatalog;
+    'app-detail': AppDetail;
     'app-footer': AppFooter;
     'app-header': AppHeader;
     'app-home': AppHome;
@@ -132,6 +142,7 @@ declare module "@stencil/core" {
       'app-bag': LocalJSX.AppBag & JSXBase.HTMLAttributes<HTMLAppBagElement>;
       'app-card': LocalJSX.AppCard & JSXBase.HTMLAttributes<HTMLAppCardElement>;
       'app-catalog': LocalJSX.AppCatalog & JSXBase.HTMLAttributes<HTMLAppCatalogElement>;
+      'app-detail': LocalJSX.AppDetail & JSXBase.HTMLAttributes<HTMLAppDetailElement>;
       'app-footer': LocalJSX.AppFooter & JSXBase.HTMLAttributes<HTMLAppFooterElement>;
       'app-header': LocalJSX.AppHeader & JSXBase.HTMLAttributes<HTMLAppHeaderElement>;
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;

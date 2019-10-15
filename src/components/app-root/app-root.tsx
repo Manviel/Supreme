@@ -16,6 +16,7 @@ export class AppRoot {
             <stencil-route url="/profile" component="app-profile" />
             <stencil-route url="/bag" component="app-bag" />
             <stencil-route url="/catalog" component="app-catalog" />
+            <stencil-route url="/detail" component="app-detail" />
           </stencil-route-switch>
         </stencil-router>
 

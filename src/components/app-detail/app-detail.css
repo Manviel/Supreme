@@ -1,0 +1,44 @@
+.container {
+  max-width: 585px;
+}
+
+.item {
+  height: 130px;
+  width: auto;
+}
+
+.thumnail {
+  width: 100%;
+}
+
+.info {
+  padding-left: 50px;
+}
+
+.classic {
+  font-size: 26px;
+  line-height: 1.308;
+  margin: 0 0 20px;
+}
+
+.fine {
+  color: rgb(117, 117, 117);
+  font-family: "Times New Roman";
+  line-height: 1.875;
+}
+
+.price {
+  font-size: 25px;
+}
+
+.switch-border {
+  padding: 14px 18px;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.size {
+  width: 54px;
+  margin-bottom: 20px;
+}
