@@ -1,20 +1,13 @@
-.app-profile {
-  height: 769px;
-  overflow: hidden;
-}
-
 .slider {
-  height: inherit;
+  height: 769px;
   width: inherit;
   overflow: hidden;
   position: relative;
 }
 
 .slide {
-  display: none;
   height: inherit;
   width: inherit;
-  position: absolute;
   animation: fadein 2s;
 }
 
@@ -47,6 +40,7 @@
 }
 
 .indicators {
+  justify-content: center;
   background: #f7f7f7;
   height: 80px;
   width: 100%;
@@ -54,10 +48,6 @@
 
 .width {
   width: 100%;
-}
-
-.first {
-  display: inline;
 }
 
 .active {

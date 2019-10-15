@@ -29,7 +29,7 @@ export class AppHeader {
             <li>Sale</li>
             <li>New Arrivals</li>
             <li>Clearence</li>
-            <li>Store Locator</li>
+            <li>Store Location</li>
             <li>
               <input type="text" placeholder="Style Name" class="form-input" />
             </li>

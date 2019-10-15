@@ -7,6 +7,10 @@
   width: 50%;
 }
 
+.col {
+  flex-direction: column;
+}
+
 .side {
   padding: 35px 0;
 }
