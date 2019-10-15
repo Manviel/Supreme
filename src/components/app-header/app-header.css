@@ -28,10 +28,6 @@ a {
   font-size: 12px;
 }
 
-.bag {
-  margin-left: 16px;
-}
-
 .nav {
   font-size: 13px;
   line-height: 5;
@@ -50,16 +46,4 @@ a {
 
 .bold {
   font-weight: bold;
-}
-
-.btn {
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  padding: 8px 20px 6px;
-}
-
-.btn:hover {
-  border: 1px solid #f14a58;
-  color: #f14a58;
-  cursor: pointer;
 }

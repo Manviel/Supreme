@@ -14,10 +14,9 @@ export class AppHeader {
           </stencil-route-link>
 
           <section class="flex space align">
-            <stencil-route-link url="/profile/stencil">
+            <stencil-route-link url="/bag">
               <button class="btn bold px-12">E-mail sign up</button>
             </stencil-route-link>
-            <span class="text bag px-12">Bag (0)</span>
           </section>
         </article>
         <nav class="flex">

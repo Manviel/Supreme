@@ -1,0 +1,18 @@
+.delivery {
+  line-height: 4.417;
+  background: #f7f7f7;
+  text-align: center;
+  justify-content: center;
+}
+
+.storage {
+  margin: 38px 0;
+}
+
+.total {
+  margin: 8px 0 0;
+}
+
+.red {
+  color: #f14a58;
+}

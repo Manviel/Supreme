@@ -55,7 +55,7 @@ export class AppHome {
 
         <h2 class="arrivals">New Arrivals</h2>
 
-        <article class="flex space">
+        <article class="flex space cards">
           {cards.map(c => (
             <app-card
               src={c.src}
@@ -66,7 +66,7 @@ export class AppHome {
           ))}
         </article>
 
-        <stencil-route-link url="/profile/stencil">
+        <stencil-route-link url="/profile">
           <button class="btn large bold">All arrivals</button>
         </stencil-route-link>
       </div>
